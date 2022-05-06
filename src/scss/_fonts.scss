@@ -1,0 +1,32 @@
+@font-face {
+   font-family: "Bellefair";
+   src: url("../fonts/Bellefair-Regular.woff2") format("woff2"), url("../fonts/Bellefair-Regular.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "PT Serif Caption";
+   src: url("../fonts/PTSerif-CaptionItalic.woff2") format("woff2"),
+      url("../fonts/PTSerif-CaptionItalic.woff") format("woff");
+   font-weight: normal;
+   font-style: italic;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Tahoma";
+   src: url("../fonts/Tahoma.woff2") format("woff2"), url("../fonts/Tahoma.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "PT Serif Caption";
+   src: url("../fonts/PTSerif-Caption.woff2") format("woff2"), url("../fonts/PTSerif-Caption.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}

@@ -1,0 +1,66 @@
+html,
+body {
+	// height: 100%;
+	font-family: "Tahoma";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+	color: $black;
+	overflow-x: hidden;
+	background: $bg;
+}
+textarea {
+	resize: none;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	// min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+	position: relative;
+}
+.footer {
+	flex: 0 0 auto;
+}
+.container {
+	max-width: 945px;
+	margin: 0 auto;
+	padding: 0px 20px;
+	// height: 100%;
+}
+input,
+textarea {
+	appearance: none;
+	outline: none;
+}
+
+//Ввод данных конец
+
+.checkbox {
+	position: relative;
+}
+.checkbox-none,
+.radio-none {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+.checkbox-style {
+	display: block;
+	cursor: pointer;
+}
+.checkbox-none:checked + .checkbox-style {
+}
+.radio-style {
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+.radio-none:checked + .radio-style::before {
+	content: " ";
+}
