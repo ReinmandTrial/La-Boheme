@@ -16,7 +16,9 @@ testWebP(function (support) {
 document.addEventListener('DOMContentLoaded', function () {
    AOS.init();
 
-
+   document.querySelector('.home__search-btn').addEventListener('click', function () {
+      this.closest('.home__search').classList.toggle('active')
+   })
 
 })
 
