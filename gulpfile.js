@@ -14,7 +14,7 @@ let path = {
       css: sourse_folder + "/scss/style.scss",
       js: [
          // 'node_modules/jquery/dist/jquery.min.js',
-         // 'node_modules/aos/dist/aos.js',
+         'node_modules/swiper/swiper-bundle.min.js',
          sourse_folder + "/js/**/*.js",
       ],
       img: sourse_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
