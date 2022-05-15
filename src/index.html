@@ -31,13 +31,13 @@
 								<input type="text" class="home__search-input search__input">
 							</div>
 							<div class="home__sidebar-image image image-right">
-								<span data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1200"
-									class="image__step image__step-1"></span>
-								<span data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1400"
-									class="image__step image__step-2"></span>
-								<span data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1600"
-									class="image__step image__step-3"></span>
-								<img src="img/collazh.jpg" alt="">
+								<span class="image__step image__step-1"></span>
+								<span class="image__step image__step-2"></span>
+								<span class="image__step image__step-3"></span>
+								<div class="image__item" data-aos-duration="1000" data-aos-delay="1000"
+									data-aos-easing="ease-out-quart">
+									<img src="img/collazh.jpg" alt="">
+								</div>
 							</div>
 							<div class="home__menu menu">
 								<button type="button" class="home__menu-btn menu__btn">Menue</button>
@@ -189,15 +189,6 @@
 									<img src="img/logo-small.svg" alt="logo">
 								</div>
 							</div>
-							<div class="post__search search">
-								<button type="button" class="search__btn btn">
-									<span class="search__text">Suche</span>
-									<span class="search__icon">
-										<img src="img/svg-icons/search.svg" alt="icon search">
-									</span>
-								</button>
-								<input type="text" class="search__input">
-							</div>
 							<div class="post__info-wrap">
 								<div class="post__info" data-aos="slide-left" data-aos-duration="800" data-aos-delay="400">
 									<p class="post__descr">Title of the Event,<br>
@@ -225,6 +216,15 @@
 								<div class="header__logo" data-aos="scale-x" data-aos-duration="900" data-aos-delay="0">
 									<img src="img/logo-line.svg" alt="logo line">
 								</div>
+								<div class="post__search search">
+									<button type="button" class="search__btn btn">
+										<span class="search__text">Suche</span>
+										<span class="search__icon">
+											<img src="img/svg-icons/search.svg" alt="icon search">
+										</span>
+									</button>
+									<input type="text" class="search__input">
+								</div>
 								<div class="header__menu menu">
 									<button type="button" class="menu__btn"></button>
 									<ul class="menu__list" data-aos="fade-down" data-aos-duration="500" data-aos-delay="100">
@@ -251,7 +251,7 @@
 												<span class="image-large__step image-large__step-1"></span>
 												<span class="image-large__step image-large__step-2"></span>
 												<span class="image-large__step image-large__step-3"></span>
-												<div class="image-large__slide" data-aos="slide-left" data-aos-duration="1000"
+												<div class="image-large__slide" data-aos="" data-aos-duration="1000"
 													data-aos-delay="1000" data-aos-easing="ease-out-quart">
 													<img src="img/uber-uns1.jpg" alt="">
 												</div>
@@ -260,7 +260,7 @@
 												<span class="image-large__step image-large__step-1"></span>
 												<span class="image-large__step image-large__step-2"></span>
 												<span class="image-large__step image-large__step-3"></span>
-												<div class="image-large__slide" data-aos="slide-left" data-aos-duration="1000"
+												<div class="image-large__slide" data-aos="" data-aos-duration="1000"
 													data-aos-delay="1000" data-aos-easing="ease-out-quart">
 													<img src="img/uber-uns2.jpg" alt="">
 												</div>
@@ -307,6 +307,553 @@
 				</div>
 			</div>
 
+			<div style="display: none;" class="veranstaltungen media page">
+				<div class="container">
+					<div class="media__content page__content">
+						<div class="media__logo logo">
+							<div class="logo__wrap">
+								<img src="img/logo-small.svg" alt="logo">
+							</div>
+						</div>
+						<div class="media__aside-btn aside-btn__wrap">
+							<button type="button" class="aside-btn" data-aos="fade-down" data-aos-duration="800"
+								data-aos-delay="1000">
+								<span>KOSTENFREIER DOWNLOAD</span>
+							</button>
+						</div>
+						<header class="media__header header">
+							<div class="header__logo" data-aos="scale-x" data-aos-duration="900" data-aos-delay="0">
+								<img src="img/logo-line.svg" alt="logo line">
+							</div>
+							<div class="media__search search">
+								<button type="button" class="search__btn btn">
+									<span class="search__text">Suche</span>
+									<span class="search__icon">
+										<img src="img/svg-icons/search.svg" alt="icon search">
+									</span>
+								</button>
+								<input type="text" class="search__input">
+							</div>
+							<div class="header__menu menu">
+								<button type="button" class="menu__btn"></button>
+								<ul class="menu__list" data-aos="fade-down" data-aos-duration="500" data-aos-delay="100">
+									<li class="menu__item">
+										<button type="button" class="menu__link">Veranstaltungen</button>
+									</li>
+									<li class="menu__item">
+										<button type="button" class="menu__link">Media</button>
+									</li>
+									<li class="menu__item">
+										<button type="button" class="menu__link">Über uns</button>
+									</li>
+									<li class="menu__item">
+										<button type="button" class="menu__link">Donate</button>
+									</li>
+								</ul>
+							</div>
+						</header>
+						<div class="media__slider catalog-slider swiper">
+							<div class="catalog-slider__slider-wrapper swiper-wrapper">
+								<div class="catalog-slider__slide swiper-slide card">
+									<div class="card__content">
+										<div class="card__image image ">
+											<span class="image__step image__step-1"></span>
+											<span class="image__step image__step-2"></span>
+											<span class="image__step image__step-3"></span>
+											<div class="image__item" data-aos="" data-aos-duration="1000" data-aos-delay="1000"
+												data-aos-easing="ease-out-quart">
+												<img src="img/sample_illustration.jpg" alt="">
+											</div>
+										</div>
+										<div class="card__info">
+											<div class="card__descr">
+												<div class="card__descr-block">
+													<p class="card__p">
+														<i><span class="serif">Month 24, 2022</span></i> <br>
+														München <br>
+														AT 07:30 PM
+													</p>
+													<p class="card__p--small">Eintrittskarten erforderlich</p>
+												</div>
+												<div class="card__descr-block">
+													<p class="card__p">
+														Venue: <br>
+														<i><span class="serif">Münchner Philharmonie</span></i>
+													</p>
+												</div>
+												<div class="card__descr-block">
+													<p class="card__p">
+														Veranstaltung: <br>
+														<i>
+															<span class="serif">
+																La Boheme <br>
+																Premierenkonzert
+															</span>
+														</i>
+													</p>
+													<button type="button"
+														class="card__btn-underline btn-underline">Einzelheiten</button>
+												</div>
+											</div>
+											<button type="button" class="card__btn btn">Ausverkauft</button>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__slide swiper-slide card">
+									<div class="card__content">
+										<div class="card__image image ">
+											<span class="image__step image__step-1"></span>
+											<span class="image__step image__step-2"></span>
+											<span class="image__step image__step-3"></span>
+											<div class="image__item" data-aos="" data-aos-duration="1000" data-aos-delay="1000"
+												data-aos-easing="ease-out-quart">
+												<img src="img/uber-uns1.jpg" alt="">
+											</div>
+										</div>
+										<div class="card__info">
+											<div class="card__descr">
+												<div class="card__descr-block">
+													<p class="card__p">
+														<i><span class="serif">Month 24, 2022</span></i> <br>
+														München <br>
+														AT 07:30 PM
+													</p>
+													<p class="card__p--small">Eintrittskarten erforderlich</p>
+												</div>
+												<div class="card__descr-block">
+													<p class="card__p">
+														Venue: <br>
+														<i><span class="serif">Münchner Philharmonie</span></i>
+													</p>
+												</div>
+												<div class="card__descr-block">
+													<p class="card__p">
+														Veranstaltung: <br>
+														<i>
+															<span class="serif">
+																La Boheme <br>
+																Premierenkonzert
+															</span>
+														</i>
+													</p>
+													<button type="button"
+														class="card__btn-underline btn-underline">Einzelheiten</button>
+												</div>
+											</div>
+											<button type="button" class="card__btn btn">Tickets kaufen</button>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__slide swiper-slide card">
+									<div class="card__content">
+										<div class="card__info">
+											<div class="card__descr">
+												<div class="card__descr-block">
+													<p class="card__p">
+														<i><span class="serif">Month 24, 2022</span></i> <br>
+														München <br>
+														AT 07:30 PM
+													</p>
+													<p class="card__p--small">Eintrittskarten erforderlich</p>
+												</div>
+												<div class="card__descr-block">
+													<p class="card__p">
+														Venue: <br>
+														<i><span class="serif">Münchner Philharmonie</span></i>
+													</p>
+												</div>
+												<div class="card__descr-block">
+													<p class="card__p">
+														Veranstaltung: <br>
+														<i>
+															<span class="serif">
+																La Boheme <br>
+																Premierenkonzert
+															</span>
+														</i>
+													</p>
+													<button type="button"
+														class="card__btn-underline btn-underline">Einzelheiten</button>
+												</div>
+											</div>
+											<button type="button" class="card__btn btn">Ausverkauft</button>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__slide swiper-slide card">
+									<div class="card__content">
+										<div class="card__image image ">
+											<span class="image__step image__step-1"></span>
+											<span class="image__step image__step-2"></span>
+											<span class="image__step image__step-3"></span>
+											<div class="image__item" data-aos="" data-aos-duration="1000" data-aos-delay="1000"
+												data-aos-easing="ease-out-quart">
+												<img src="img/sample_illustration.jpg" alt="">
+											</div>
+										</div>
+										<div class="card__info">
+											<div class="card__descr">
+												<div class="card__descr-block">
+													<p class="card__p">
+														<i><span class="serif">Month 24, 2022</span></i> <br>
+														München <br>
+														AT 07:30 PM
+													</p>
+													<p class="card__p--small">Eintrittskarten erforderlich</p>
+												</div>
+												<div class="card__descr-block">
+													<p class="card__p">
+														Venue: <br>
+														<i><span class="serif">Münchner Philharmonie</span></i>
+													</p>
+												</div>
+												<div class="card__descr-block">
+													<p class="card__p">
+														Veranstaltung: <br>
+														<i>
+															<span class="serif">
+																La Boheme <br>
+																Premierenkonzert
+															</span>
+														</i>
+													</p>
+													<button type="button"
+														class="card__btn-underline btn-underline">Einzelheiten</button>
+												</div>
+											</div>
+											<button type="button" class="card__btn btn">Ausverkauft</button>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__slide swiper-slide card">
+									<div class="card__content">
+										<div class="card__image image ">
+											<span class="image__step image__step-1"></span>
+											<span class="image__step image__step-2"></span>
+											<span class="image__step image__step-3"></span>
+											<div class="image__item" data-aos="" data-aos-duration="1000" data-aos-delay="1000"
+												data-aos-easing="ease-out-quart">
+												<img src="img/uber-uns1.jpg" alt="">
+											</div>
+										</div>
+										<div class="card__info">
+											<div class="card__descr">
+												<div class="card__descr-block">
+													<p class="card__p">
+														<i><span class="serif">Month 24, 2022</span></i> <br>
+														München <br>
+														AT 07:30 PM
+													</p>
+													<p class="card__p--small">Eintrittskarten erforderlich</p>
+												</div>
+												<div class="card__descr-block">
+													<p class="card__p">
+														Venue: <br>
+														<i><span class="serif">Münchner Philharmonie</span></i>
+													</p>
+												</div>
+												<div class="card__descr-block">
+													<p class="card__p">
+														Veranstaltung: <br>
+														<i>
+															<span class="serif">
+																La Boheme <br>
+																Premierenkonzert
+															</span>
+														</i>
+													</p>
+													<button type="button"
+														class="card__btn-underline btn-underline">Einzelheiten</button>
+												</div>
+											</div>
+											<button type="button" class="card__btn btn">Tickets kaufen</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-slider__btns">
+								<button type="button" class="catalog-slider__btn catalog-slider__btn-next">FRUHER</button>
+								<button type="button" class="catalog-slider__btn catalog-slider__btn-prev">JETZT</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div style="display: none;" class="media page">
+				<div class="container">
+					<div class="media__content page__content">
+						<div class="media__logo logo">
+							<div class="logo__wrap">
+								<img src="img/logo-small.svg" alt="logo">
+							</div>
+						</div>
+						<div class="media__aside-btn aside-btn__wrap">
+							<button type="button" class="aside-btn" data-aos="fade-down" data-aos-duration="800"
+								data-aos-delay="1000">
+								<span>PREMIERE</span>
+							</button>
+						</div>
+						<header class="media__header header">
+							<div class="header__logo" data-aos="scale-x" data-aos-duration="900" data-aos-delay="0">
+								<img src="img/logo-line.svg" alt="logo line">
+							</div>
+							<div class="media__search search">
+								<button type="button" class="search__btn btn">
+									<span class="search__text">Suche</span>
+									<span class="search__icon">
+										<img src="img/svg-icons/search.svg" alt="icon search">
+									</span>
+								</button>
+								<input type="text" class="search__input">
+							</div>
+							<div class="header__menu menu">
+								<button type="button" class="menu__btn"></button>
+								<ul class="menu__list" data-aos="fade-down" data-aos-duration="500" data-aos-delay="100">
+									<li class="menu__item">
+										<button type="button" class="menu__link">Veranstaltungen</button>
+									</li>
+									<li class="menu__item">
+										<button type="button" class="menu__link">Media</button>
+									</li>
+									<li class="menu__item">
+										<button type="button" class="menu__link">Über uns</button>
+									</li>
+									<li class="menu__item">
+										<button type="button" class="menu__link">Donate</button>
+									</li>
+								</ul>
+							</div>
+						</header>
+						<div class="media__slider catalog-slider swiper">
+							<div class="catalog-slider__slider-wrapper swiper-wrapper">
+								<div class="catalog-slider__slide swiper-slide card">
+									<div class="card__content">
+
+										<div class="card__info">
+											<div class="card__descr">
+
+												<div class="card__descr-block">
+													<p class="card__p">
+														<span class="serif"> Title of the Composition, <br>
+															ex. Premierenkonzert <br>
+															<i>Month</i> 24, 2022 <br>
+															Venue, ex. Münchner Philharmonie
+															<br>
+														</span>
+														05:22’’
+													</p>
+												</div>
+												<div class="card__descr-block">
+													<button type="button" class="card__btn-underline btn-underline">Horen</button>
+												</div>
+												<div class="card__descr-block">
+													<button type="button" class="card__btn-underline btn-underline">Video</button>
+												</div>
+												<div class="card__descr-block">
+													<button type="button"
+														class="card__btn-underline btn-underline">Einzelheiten</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__slide swiper-slide card">
+									<div class="card__content">
+										<div class="card__image image ">
+											<span class="image__step image__step-1"></span>
+											<span class="image__step image__step-2"></span>
+											<span class="image__step image__step-3"></span>
+											<div class="image__item" data-aos="" data-aos-duration="1000" data-aos-delay="1000"
+												data-aos-easing="ease-out-quart">
+												<img src="img/sample_illustration.jpg" alt="">
+											</div>
+										</div>
+										<div class="card__info">
+											<div class="card__descr">
+
+												<div class="card__descr-block">
+													<p class="card__p">
+														<span class="serif"> Title of the Composition, <br>
+															ex. Premierenkonzert <br>
+															<i>Month</i> 24, 2022 <br>
+															Venue, ex. Münchner Philharmonie
+															<br>
+														</span>
+														05:22’’
+													</p>
+												</div>
+												<div class="card__descr-block">
+													<button type="button" class="card__btn-underline btn-underline">Horen</button>
+												</div>
+												<div class="card__descr-block">
+													<button type="button" class="card__btn-underline btn-underline">Video</button>
+												</div>
+												<div class="card__descr-block">
+													<button type="button"
+														class="card__btn-underline btn-underline">Einzelheiten</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__slide swiper-slide card">
+									<div class="card__content">
+										<div class="card__image image ">
+											<span class="image__step image__step-1"></span>
+											<span class="image__step image__step-2"></span>
+											<span class="image__step image__step-3"></span>
+											<div class="image__item" data-aos="" data-aos-duration="1000" data-aos-delay="1000"
+												data-aos-easing="ease-out-quart">
+												<img src="img/sample_illustration.jpg" alt="">
+											</div>
+										</div>
+										<div class="card__info">
+											<div class="card__descr">
+
+												<div class="card__descr-block">
+													<p class="card__p">
+														<span class="serif"> Title of the Composition, <br>
+															ex. Premierenkonzert <br>
+															<i>Month</i> 24, 2022 <br>
+															Venue, ex. Münchner Philharmonie
+															<br>
+														</span>
+														05:22’’
+													</p>
+												</div>
+												<div class="card__descr-block">
+													<button type="button" class="card__btn-underline btn-underline">Horen</button>
+												</div>
+												<div class="card__descr-block">
+													<button type="button" class="card__btn-underline btn-underline">Video</button>
+												</div>
+												<div class="card__descr-block">
+													<button type="button"
+														class="card__btn-underline btn-underline">Einzelheiten</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__slide swiper-slide card">
+									<div class="card__content">
+
+										<div class="card__info">
+											<div class="card__descr">
+
+												<div class="card__descr-block">
+													<p class="card__p">
+														<span class="serif"> Title of the Composition, <br>
+															ex. Premierenkonzert <br>
+															<i>Month</i> 24, 2022 <br>
+															Venue, ex. Münchner Philharmonie
+															<br>
+														</span>
+														05:22’’
+													</p>
+												</div>
+												<div class="card__descr-block">
+													<button type="button" class="card__btn-underline btn-underline">Horen</button>
+												</div>
+												<div class="card__descr-block">
+													<button type="button" class="card__btn-underline btn-underline">Video</button>
+												</div>
+												<div class="card__descr-block">
+													<button type="button"
+														class="card__btn-underline btn-underline">Einzelheiten</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__slide swiper-slide card">
+									<div class="card__content">
+										<div class="card__image image ">
+											<span class="image__step image__step-1"></span>
+											<span class="image__step image__step-2"></span>
+											<span class="image__step image__step-3"></span>
+											<div class="image__item" data-aos="" data-aos-duration="1000" data-aos-delay="1000"
+												data-aos-easing="ease-out-quart">
+												<img src="img/sample_illustration.jpg" alt="">
+											</div>
+										</div>
+										<div class="card__info">
+											<div class="card__descr">
+
+												<div class="card__descr-block">
+													<p class="card__p">
+														<span class="serif"> Title of the Composition, <br>
+															ex. Premierenkonzert <br>
+															<i>Month</i> 24, 2022 <br>
+															Venue, ex. Münchner Philharmonie
+															<br>
+														</span>
+														05:22’’
+													</p>
+												</div>
+												<div class="card__descr-block">
+													<button type="button" class="card__btn-underline btn-underline">Horen</button>
+												</div>
+												<div class="card__descr-block">
+													<button type="button" class="card__btn-underline btn-underline">Video</button>
+												</div>
+												<div class="card__descr-block">
+													<button type="button"
+														class="card__btn-underline btn-underline">Einzelheiten</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-slider__slide swiper-slide card">
+									<div class="card__content">
+										<div class="card__image image ">
+											<span class="image__step image__step-1"></span>
+											<span class="image__step image__step-2"></span>
+											<span class="image__step image__step-3"></span>
+											<div class="image__item" data-aos="" data-aos-duration="1000" data-aos-delay="1000"
+												data-aos-easing="ease-out-quart">
+												<img src="img/sample_illustration.jpg" alt="">
+											</div>
+										</div>
+										<div class="card__info">
+											<div class="card__descr">
+
+												<div class="card__descr-block">
+													<p class="card__p">
+														<span class="serif"> Title of the Composition, <br>
+															ex. Premierenkonzert <br>
+															<i>Month</i> 24, 2022 <br>
+															Venue, ex. Münchner Philharmonie
+															<br>
+														</span>
+														05:22’’
+													</p>
+												</div>
+												<div class="card__descr-block">
+													<button type="button" class="card__btn-underline btn-underline">Horen</button>
+												</div>
+												<div class="card__descr-block">
+													<button type="button" class="card__btn-underline btn-underline">Video</button>
+												</div>
+												<div class="card__descr-block">
+													<button type="button"
+														class="card__btn-underline btn-underline">Einzelheiten</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-slider__btns">
+								<button type="button" class="catalog-slider__btn catalog-slider__btn-next">FRUHER</button>
+								<button type="button" class="catalog-slider__btn catalog-slider__btn-prev">JETZT</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</main>
 		<!-- MAIN end -->
