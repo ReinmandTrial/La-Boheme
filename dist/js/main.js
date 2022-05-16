@@ -67,6 +67,8 @@ document.addEventListener('DOMContentLoaded', function () {
    });
 
 
+
+
    function logoRotate() {
       document.querySelector('.logo__wrap').classList.remove('animate');
       setTimeout(function () {
@@ -96,18 +98,15 @@ document.addEventListener('DOMContentLoaded', function () {
             slidesPerView: 2,
          }
       },
-      // autoplay: {
-      //    delay: 3700,
-      //    disableOnInteraction: false,
-      // },
       simulateTouch: false,
       slidesPerView: 3,
-      // loop: true,
       speed: 1000
    });
-   // setTimeout(function () {
-   AOS.init();
-   // }, 500)
+
+   AOS.init({
+      once: false,
+   });
+
    var cards = document.querySelectorAll('.card')
    cards.forEach(el => {
       var contentHeight = el.querySelector('.card__content').clientHeight
@@ -115,5 +114,6 @@ document.addEventListener('DOMContentLoaded', function () {
       el.style.height = contentHeight + 'px'
 
    });
+
 })
 

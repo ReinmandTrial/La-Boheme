@@ -356,6 +356,7 @@
       font-size: 28px;
       cursor: pointer;
       transition: 0.1s ease;
+      &.active,
       &:hover {
          color: $pink;
       }
@@ -1103,40 +1104,6 @@
 .serif {
    font-family: "PT Serif Caption";
 }
-.pt-page-moveToLeft {
-   -webkit-animation: moveToLeft 0.6s ease both;
-   animation: moveToLeft 0.6s ease both;
-}
-.pt-page-moveFromRight {
-   -webkit-animation: moveFromRight 0.6s ease both;
-   animation: moveFromRight 0.6s ease both;
-}
-@-webkit-keyframes moveToLeft {
-   from {
-   }
-   to {
-      -webkit-transform: translateX(-100%);
-   }
-}
-@keyframes moveToLeft {
-   from {
-   }
-   to {
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-   }
-}
-@-webkit-keyframes moveFromRight {
-   from {
-      -webkit-transform: translateX(100%);
-   }
-}
-@keyframes moveFromRight {
-   from {
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-   }
-}
 .pt-perspective {
    position: relative;
    width: 100%;
@@ -1155,6 +1122,7 @@
    overflow: hidden;
    backface-visibility: hidden;
    transform: translate3d(0, 0, 0);
+   animation-timing-function: ease-out !important;
 }
 
 .pt-page-current,
@@ -1168,4 +1136,27 @@
 
 .pt-page-ontop {
    z-index: 999;
+}
+
+.wrapper {
+   min-height: 100vh;
+}
+html,
+body {
+   min-height: 100vh;
+}
+.pt-page-current {
+   z-index: 9999;
+}
+.pt-wrapper {
+   height: 100vh;
+   overflow: hidden;
+}
+.pt-page:not(.pt-page-current) {
+   top: 150%;
+   & *,
+   & ::before,
+   & ::after {
+      transition-duration: 0s;
+   }
 }
