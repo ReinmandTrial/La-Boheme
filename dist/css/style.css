@@ -4378,9 +4378,19 @@ textarea {
   }
 }
 
+@media (max-height: 850px) {
+  .home {
+    padding-bottom: 80px;
+  }
+}
 @media (max-width: 767.98px) {
   .home__content {
     border: none;
+  }
+}
+@media (max-height: 850px) {
+  .home__sidebar {
+    width: 270px;
   }
 }
 .home__search {
@@ -4417,10 +4427,22 @@ textarea {
   margin-bottom: 40px;
   overflow: hidden;
 }
+@media (max-height: 850px) {
+  .home__menu {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+}
 .home__menu-body {
   padding-bottom: 100px !important;
   margin-left: 50px;
   border-bottom: 2px solid #000;
+}
+@media (max-height: 850px) {
+  .home__menu-body {
+    padding-bottom: 20px !important;
+    margin-left: 30px;
+  }
 }
 @media (max-width: 767.98px) {
   .home__menu-body {
@@ -4432,6 +4454,16 @@ textarea {
 }
 .home__link:not(:last-child) {
   margin-bottom: 15px;
+}
+@media (max-height: 850px) {
+  .home__link:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media (max-height: 850px) {
+  .home__link .menu__link {
+    font-size: 24px;
+  }
 }
 .home__main {
   -webkit-box-flex: 1;
@@ -4712,16 +4744,31 @@ textarea {
     max-height: 800px;
   }
 }
+.post__content::after {
+  display: none;
+}
 .post__info-wrap {
   overflow: hidden;
-  border-bottom: 2px solid #000;
   margin-left: 50px;
+  position: relative;
+}
+.post__info-wrap::after {
+  content: "";
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  bottom: -20px;
+  width: 2px;
+  right: 0;
+  background: #000000;
 }
 .post__info {
   padding-top: 100px;
   padding-right: 8px;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
   padding-left: 22px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
 }
 .post__descr {
   font-family: "PT Serif Caption";
@@ -5229,4 +5276,10 @@ body {
        -o-transition-duration: 0s;
           transition-duration: 0s;
 }
+
+.no-webp .no-webp .home__main-image-wrap {
+  background: url(../img/offset_931554.jpg) 0 0/100% 100% repeat-y !important; }
+
 .webp .home__main-image-wrap { background: url(../img/offset_931554.webp) 0px 0px/100% 100% repeat-y; }
+
+.webp .no-webp .home__main-image-wrap { background: url(../img/offset_931554.webp) 0 0/100% 100% repeat-y !important; }

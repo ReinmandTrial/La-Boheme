@@ -429,9 +429,17 @@
    }
 }
 .home {
+   @media (max-height: 850px) {
+      padding-bottom: 80px;
+   }
    &__content {
       @media (max-width: 767.98px) {
          border: none;
+      }
+   }
+   &__sidebar {
+      @media (max-height: 850px) {
+         width: 270px;
       }
    }
 
@@ -465,6 +473,10 @@
       padding-top: 40px;
       margin-bottom: 40px;
       overflow: hidden;
+      @media (max-height: 850px) {
+         margin-bottom: 20px;
+         padding-top: 20px;
+      }
    }
 
    &__menu-btn {
@@ -474,7 +486,10 @@
       padding-bottom: 100px !important;
       margin-left: 50px;
       border-bottom: 2px solid #000;
-
+      @media (max-height: 850px) {
+         padding-bottom: 20px !important;
+         margin-left: 30px;
+      }
       @media (max-width: 767.98px) {
          border: none;
       }
@@ -485,6 +500,14 @@
 
       &:not(:last-child) {
          margin-bottom: 15px;
+         @media (max-height: 850px) {
+            margin-bottom: 10px;
+         }
+      }
+      @media (max-height: 850px) {
+         .menu__link {
+            font-size: 24px;
+         }
       }
    }
    &__main {
@@ -694,6 +717,9 @@
       @media (min-height: 1200px) {
          max-height: 800px;
       }
+      &::after {
+         display: none;
+      }
    }
 
    &__leftside {
@@ -706,14 +732,26 @@
    }
    &__info-wrap {
       overflow: hidden;
-      border-bottom: 2px solid #000;
       margin-left: 50px;
+      position: relative;
+      &::after {
+         content: "";
+         position: absolute;
+         z-index: 50;
+         top: 0;
+         bottom: -20px;
+         width: 2px;
+         right: 0;
+         background: #000000;
+      }
    }
    &__info {
       padding-top: 100px;
       padding-right: 8px;
-      padding-bottom: 16px;
+      padding-bottom: 20px;
       padding-left: 22px;
+      border-bottom: 2px solid #000;
+      margin-bottom: 20px;
    }
 
    &__descr {
@@ -1159,4 +1197,7 @@ body {
    & ::after {
       transition-duration: 0s;
    }
+}
+.no-webp .home__main-image-wrap {
+   background: url(../img/offset_931554.jpg) 0 0/100% 100% repeat-y !important;
 }
