@@ -825,7 +825,7 @@
    &__text {
       font-size: 14px;
       line-height: 1.43;
-      padding: 52px 19px 12px 13px;
+      padding: 52px 19px 12px 18px;
       margin-left: 50px;
       border-bottom: 2px solid #000;
       position: relative;
@@ -1000,29 +1000,6 @@
       }
    }
 }
-// [data-aos="logoLH"] {
-//    &.aos-animate {
-//       animation: logoLH 2s ease-out;
-//       .caption {
-//          animation: logoLH 2s ease-out;
-//       }
-//       .santa {
-//          animation: logoLH 2s ease-out;
-//       }
-//       .space-1 {
-//          animation: logoLH 2s ease-out;
-//       }
-//       .space-2 {
-//          animation: logoLH 2s ease-out;
-//       }
-//       .space-3 {
-//          animation: logoLH 2s ease-out;
-//       }
-//       .tahoma {
-//          animation: logoLH 2s ease-out;
-//       }
-//    }
-// }
 .header {
    margin-top: -105px;
    display: flex;
@@ -1038,7 +1015,7 @@
       text-align: right;
       margin-top: 0px;
       margin-left: -150px;
-      margin-right: -3px;
+      margin-right: -6px;
       .caption {
          font-family: "PT Serif Caption";
          letter-spacing: -0.03em;
@@ -1054,7 +1031,7 @@
       .space-2 {
          letter-spacing: -0.22em;
          display: inline-block;
-         width: 4px;
+         width: 3px;
       }
       .space-3 {
          letter-spacing: -0.22em;
@@ -1079,7 +1056,7 @@
          flex-wrap: wrap;
       }
       .menu__item:not(:first-child) {
-         margin-left: 42px;
+         margin-left: 41px;
       }
    }
 }
@@ -1231,6 +1208,7 @@
 
    &__descr {
       border-bottom: 2px solid #000;
+      padding-left: 20px;
    }
 
    &__descr-block {

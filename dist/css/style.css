@@ -4833,7 +4833,7 @@ textarea {
 .post__text {
   font-size: 14px;
   line-height: 1.43;
-  padding: 52px 19px 12px 13px;
+  padding: 52px 19px 12px 18px;
   margin-left: 50px;
   border-bottom: 2px solid #000;
   position: relative;
@@ -5117,7 +5117,7 @@ textarea {
   text-align: right;
   margin-top: 0px;
   margin-left: -150px;
-  margin-right: -3px;
+  margin-right: -6px;
 }
 .header__logo .caption {
   font-family: "PT Serif Caption";
@@ -5134,7 +5134,7 @@ textarea {
 .header__logo .space-2 {
   letter-spacing: -0.22em;
   display: inline-block;
-  width: 4px;
+  width: 3px;
 }
 .header__logo .space-3 {
   letter-spacing: -0.22em;
@@ -5163,7 +5163,7 @@ textarea {
       flex-wrap: wrap;
 }
 .header__menu .menu__item:not(:first-child) {
-  margin-left: 42px;
+  margin-left: 41px;
 }
 
 .media.veranstaltungen .card__content::after {
@@ -5321,6 +5321,7 @@ textarea {
 }
 .card__descr {
   border-bottom: 2px solid #000;
+  padding-left: 20px;
 }
 .card__descr-block {
   margin-bottom: 40px;
