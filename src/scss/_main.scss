@@ -936,15 +936,134 @@
       z-index: 5;
    }
 }
+@keyframes logoLH {
+   25% {
+      letter-spacing: 0.09em;
+      word-spacing: 0.07em;
+   }
+}
+[data-aos="logoLH"] {
+   &.header__logo {
+      // word-spacing: 0.001px;
+      letter-spacing: 0.09em;
+      transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+      .caption {
+         letter-spacing: 0.09em;
+         transition: 1.5s ease-out;
+         transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+      }
+      .santa {
+         letter-spacing: 0.09em;
+         transition: 1.5s ease-out;
+         transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+      }
+      .space-1 {
+         letter-spacing: 0.09em;
+         transition: 1.5s ease-out;
+         transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+      }
+      .space-2 {
+         letter-spacing: 0.09em;
+         transition: 1.5s ease-out;
+         transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+      }
+      .space-3 {
+         letter-spacing: 0.09em;
+         transition: 1.5s ease-out;
+         transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+      }
+      .tahoma {
+         letter-spacing: 0.09em;
+         transition: 1.5s ease-out;
+         transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+      }
+   }
+   &.aos-animate {
+      word-spacing: -12px;
+      letter-spacing: normal;
+      .caption {
+         letter-spacing: -0.03em;
+      }
+      .santa {
+      }
+      .space-1 {
+         letter-spacing: -0.22em;
+      }
+      .space-2 {
+         letter-spacing: -0.22em;
+      }
+      .space-3 {
+         letter-spacing: -0.22em;
+      }
+      .tahoma {
+         letter-spacing: -0.01em;
+      }
+   }
+}
+// [data-aos="logoLH"] {
+//    &.aos-animate {
+//       animation: logoLH 2s ease-out;
+//       .caption {
+//          animation: logoLH 2s ease-out;
+//       }
+//       .santa {
+//          animation: logoLH 2s ease-out;
+//       }
+//       .space-1 {
+//          animation: logoLH 2s ease-out;
+//       }
+//       .space-2 {
+//          animation: logoLH 2s ease-out;
+//       }
+//       .space-3 {
+//          animation: logoLH 2s ease-out;
+//       }
+//       .tahoma {
+//          animation: logoLH 2s ease-out;
+//       }
+//    }
+// }
 .header {
    margin-top: -105px;
    display: flex;
    flex-direction: column;
    align-items: flex-end;
    position: relative;
-   margin-bottom: 26px;
+   margin-bottom: 19px;
+   transition: 2s ease-out;
    &__logo {
-      margin-bottom: 10px;
+      font-size: 39px;
+      line-height: 47px;
+      word-spacing: -12px;
+      text-align: right;
+      margin-top: 0px;
+      margin-left: -150px;
+      margin-right: -3px;
+      .caption {
+         font-family: "PT Serif Caption";
+         letter-spacing: -0.03em;
+      }
+      .santa {
+         font-family: "Santa Fe LET";
+      }
+      .space-1 {
+         letter-spacing: -0.22em;
+         display: inline-block;
+         width: 5px;
+      }
+      .space-2 {
+         letter-spacing: -0.22em;
+         display: inline-block;
+         width: 4px;
+      }
+      .space-3 {
+         letter-spacing: -0.22em;
+         display: inline-block;
+         width: 4px;
+      }
+      .tahoma {
+         letter-spacing: -0.01em;
+      }
    }
    .search {
       position: absolute;
@@ -960,7 +1079,7 @@
          flex-wrap: wrap;
       }
       .menu__item:not(:first-child) {
-         margin-left: 35px;
+         margin-left: 42px;
       }
    }
 }

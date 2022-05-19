@@ -105,6 +105,13 @@ button {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Santa Fe LET";
+  src: url("../fonts/SantaFeLetPlain.woff2") format("woff2"), url("../fonts/SantaFeLetPlain.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
 [data-aos][data-aos][data-aos-duration]:not(.aos-init) {
   -webkit-transition-duration: 0ms;
        -o-transition-duration: 0ms;
@@ -4992,6 +4999,99 @@ textarea {
   z-index: 5;
 }
 
+@-webkit-keyframes logoLH {
+  25% {
+    letter-spacing: 0.09em;
+    word-spacing: 0.07em;
+  }
+}
+
+@keyframes logoLH {
+  25% {
+    letter-spacing: 0.09em;
+    word-spacing: 0.07em;
+  }
+}
+[data-aos=logoLH].header__logo {
+  letter-spacing: 0.09em;
+  -webkit-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+       -o-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+          transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+}
+[data-aos=logoLH].header__logo .caption {
+  letter-spacing: 0.09em;
+  -webkit-transition: 1.5s ease-out;
+  -o-transition: 1.5s ease-out;
+  transition: 1.5s ease-out;
+  -webkit-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+       -o-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+          transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+}
+[data-aos=logoLH].header__logo .santa {
+  letter-spacing: 0.09em;
+  -webkit-transition: 1.5s ease-out;
+  -o-transition: 1.5s ease-out;
+  transition: 1.5s ease-out;
+  -webkit-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+       -o-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+          transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+}
+[data-aos=logoLH].header__logo .space-1 {
+  letter-spacing: 0.09em;
+  -webkit-transition: 1.5s ease-out;
+  -o-transition: 1.5s ease-out;
+  transition: 1.5s ease-out;
+  -webkit-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+       -o-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+          transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+}
+[data-aos=logoLH].header__logo .space-2 {
+  letter-spacing: 0.09em;
+  -webkit-transition: 1.5s ease-out;
+  -o-transition: 1.5s ease-out;
+  transition: 1.5s ease-out;
+  -webkit-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+       -o-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+          transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+}
+[data-aos=logoLH].header__logo .space-3 {
+  letter-spacing: 0.09em;
+  -webkit-transition: 1.5s ease-out;
+  -o-transition: 1.5s ease-out;
+  transition: 1.5s ease-out;
+  -webkit-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+       -o-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+          transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+}
+[data-aos=logoLH].header__logo .tahoma {
+  letter-spacing: 0.09em;
+  -webkit-transition: 1.5s ease-out;
+  -o-transition: 1.5s ease-out;
+  transition: 1.5s ease-out;
+  -webkit-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+       -o-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+          transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+}
+[data-aos=logoLH].aos-animate {
+  word-spacing: -12px;
+  letter-spacing: normal;
+}
+[data-aos=logoLH].aos-animate .caption {
+  letter-spacing: -0.03em;
+}
+[data-aos=logoLH].aos-animate .space-1 {
+  letter-spacing: -0.22em;
+}
+[data-aos=logoLH].aos-animate .space-2 {
+  letter-spacing: -0.22em;
+}
+[data-aos=logoLH].aos-animate .space-3 {
+  letter-spacing: -0.22em;
+}
+[data-aos=logoLH].aos-animate .tahoma {
+  letter-spacing: -0.01em;
+}
+
 .header {
   margin-top: -105px;
   display: -webkit-box;
@@ -5005,10 +5105,44 @@ textarea {
       -ms-flex-align: end;
           align-items: flex-end;
   position: relative;
-  margin-bottom: 26px;
+  margin-bottom: 19px;
+  -webkit-transition: 2s ease-out;
+  -o-transition: 2s ease-out;
+  transition: 2s ease-out;
 }
 .header__logo {
-  margin-bottom: 10px;
+  font-size: 39px;
+  line-height: 47px;
+  word-spacing: -12px;
+  text-align: right;
+  margin-top: 0px;
+  margin-left: -150px;
+  margin-right: -3px;
+}
+.header__logo .caption {
+  font-family: "PT Serif Caption";
+  letter-spacing: -0.03em;
+}
+.header__logo .santa {
+  font-family: "Santa Fe LET";
+}
+.header__logo .space-1 {
+  letter-spacing: -0.22em;
+  display: inline-block;
+  width: 5px;
+}
+.header__logo .space-2 {
+  letter-spacing: -0.22em;
+  display: inline-block;
+  width: 4px;
+}
+.header__logo .space-3 {
+  letter-spacing: -0.22em;
+  display: inline-block;
+  width: 4px;
+}
+.header__logo .tahoma {
+  letter-spacing: -0.01em;
 }
 .header .search {
   position: absolute;
@@ -5029,7 +5163,7 @@ textarea {
       flex-wrap: wrap;
 }
 .header__menu .menu__item:not(:first-child) {
-  margin-left: 35px;
+  margin-left: 42px;
 }
 
 .media.veranstaltungen .card__content::after {
