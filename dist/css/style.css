@@ -4390,15 +4390,25 @@ textarea {
     padding-bottom: 80px;
   }
 }
+.home .container {
+  min-height: 100%;
+}
+.home__content {
+  min-height: 100%;
+}
 @media (max-width: 767.98px) {
   .home__content {
     border: none;
   }
 }
-@media (max-height: 850px) {
-  .home__sidebar {
-    width: 270px;
-  }
+.home__sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .home__search {
   margin-left: auto;
@@ -4415,7 +4425,7 @@ textarea {
   width: -moz-available;
   width: stretch;
   overflow: hidden;
-  margin-top: 0 !important;
+  margin-top: -1px !important;
 }
 @media (max-width: 767.98px) {
   .home__sidebar-image {
@@ -4429,6 +4439,9 @@ textarea {
      object-fit: cover;
 }
 .home__menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   margin-right: -1px;
   padding-top: 40px;
   margin-bottom: 40px;
@@ -4441,6 +4454,8 @@ textarea {
   }
 }
 .home__menu-body {
+  height: 100%;
+  max-height: 320px;
   padding-bottom: 100px !important;
   margin-left: 50px;
   border-bottom: 2px solid #000;
@@ -4562,6 +4577,19 @@ textarea {
     margin-left: auto;
     font-size: 18px;
   }
+}
+.home__btn-sound-icon {
+  width: 34px;
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 767.98px) {
   .home__btn-sound-icon {
@@ -4811,6 +4839,17 @@ textarea {
 }
 .post__slider {
   min-height: 46px;
+  position: relative;
+}
+.post__slider::after {
+  content: "";
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  bottom: -26px;
+  width: 2px;
+  right: 0;
+  background: #000000;
 }
 .post__slider-slide {
   width: 100%;
@@ -4833,7 +4872,7 @@ textarea {
 .post__text {
   font-size: 14px;
   line-height: 1.43;
-  padding: 52px 19px 12px 18px;
+  padding: 52px 19px 20px 18px;
   margin-left: 50px;
   border-bottom: 2px solid #000;
   position: relative;
@@ -4907,13 +4946,14 @@ textarea {
   }
 }
 .logo {
-  width: 144px;
-  height: 144px;
+  width: 151px;
+  height: 151px;
   position: absolute;
   left: 10px;
   bottom: calc(100% + 25px);
 }
 .logo__wrap {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5105,7 +5145,7 @@ textarea {
       -ms-flex-align: end;
           align-items: flex-end;
   position: relative;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   -webkit-transition: 2s ease-out;
   -o-transition: 2s ease-out;
   transition: 2s ease-out;
@@ -5117,7 +5157,7 @@ textarea {
   text-align: right;
   margin-top: 0px;
   margin-left: -150px;
-  margin-right: -6px;
+  cursor: pointer;
 }
 .header__logo .caption {
   font-family: "PT Serif Caption";
@@ -5129,20 +5169,20 @@ textarea {
 .header__logo .space-1 {
   letter-spacing: -0.22em;
   display: inline-block;
-  width: 5px;
+  width: 4px;
 }
 .header__logo .space-2 {
   letter-spacing: -0.22em;
   display: inline-block;
-  width: 3px;
+  width: 1px;
 }
 .header__logo .space-3 {
   letter-spacing: -0.22em;
   display: inline-block;
-  width: 4px;
+  width: 3px;
 }
 .header__logo .tahoma {
-  letter-spacing: -0.01em;
+  letter-spacing: -0.008em;
 }
 .header .search {
   position: absolute;
@@ -5163,7 +5203,7 @@ textarea {
       flex-wrap: wrap;
 }
 .header__menu .menu__item:not(:first-child) {
-  margin-left: 41px;
+  margin-left: 42px;
 }
 
 .media.veranstaltungen .card__content::after {

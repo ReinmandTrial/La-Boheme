@@ -14,12 +14,12 @@ testWebP(function (support) {
    }
 });
 
-const imagesLargeFade = document.querySelectorAll('.image-large')
-imagesLargeFade.forEach(imageLargeFade => {
-   let arr = ['slide-down', 'slide-left', 'slide-right', 'slide-up'];
-   let rand = Math.floor(Math.random() * arr.length);
-   imageLargeFade.querySelector('.image-large__slide').setAttribute('data-aos', arr[rand])
-});
+// const imagesLargeFade = document.querySelectorAll('.image-large')
+// imagesLargeFade.forEach(imageLargeFade => {
+//    let arr = ['slide-down', 'slide-left', 'slide-right', 'slide-up'];
+//    let rand = Math.floor(Math.random() * arr.length);
+//    imageLargeFade.querySelector('.image-large__slide').setAttribute('data-aos', arr[rand])
+// });
 
 const imagesFade = document.querySelectorAll('.image')
 imagesFade.forEach(imageFade => {
@@ -29,9 +29,6 @@ imagesFade.forEach(imageFade => {
 });
 const imagesLarge = document.querySelectorAll('.image-large')
 imagesLarge.forEach(imageLarge => {
-   // let arrMargin = ['mt-100', 'mt-0'];
-   // let randMargin = Math.floor(Math.random() * arrMargin.length);
-   // imageLarge.classList.add(arrMargin[randMargin])
    let arr = ['image-large--1', 'image-large--2', 'image-large--3', 'image-large--4', 'image-large--5', 'image-large--6', 'image-large--7'];
    let rand = Math.floor(Math.random() * arr.length);
    imageLarge.classList.add(arr[rand])
@@ -80,7 +77,18 @@ document.addEventListener('DOMContentLoaded', function () {
    setInterval(logoRotate, 5000);
 
 
+   const btnSound = document.querySelector('.home__btn-sound')
 
+   btnSound.addEventListener('click', function () {
+      if (btnSound.classList.contains('on')) {
+         btnSound.innerHTML = '<span class="home__btn-sound-icon"><img src="img/svg-icons/close.svg" alt=""></span>Ton aus'
+         btnSound.classList.remove('on')
+      } else {
+         btnSound.innerHTML = '<span class="home__btn-sound-icon"><img src="img/svg-icons/sound-on.svg" alt=""></span>Ton an'
+         btnSound.classList.add('on')
+
+      }
+   })
 
    const catalog = new Swiper('.catalog-slider', {
       navigation: {
