@@ -134,23 +134,26 @@ document.addEventListener('DOMContentLoaded', function () {
             simulateTouch: false,
             slidesPerView: 1,
             speed: 1000,
-            // loop: true,
-            // autoplay: {
-            //    delay: 3000,
-            //    disableOnInteraction: false,
-            // },
-            // autoHeight: true,
             effect: 'creative',
             creativeEffect: {
                perspective: true,
                limitProgress: 1,
                transformEl: 'test',
             },
-
          });
+         var swipeWait = true
          setInterval(function () {
             if (plugCards.realIndex != 3) {
-               plugCards.slideNext();
+               if (plugCards.realIndex == 0) {
+                  if (swipeWait == true) {
+                     swipeWait = false
+                  } else if (swipeWait == false) {
+                     plugCards.slideNext();
+                     swipeWait = true
+                  }
+               } else {
+                  plugCards.slideNext();
+               }
             } else {
                plugCards.slideTo(0)
             }
