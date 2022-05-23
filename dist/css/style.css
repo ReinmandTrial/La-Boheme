@@ -5445,15 +5445,15 @@ body {
 
 @-webkit-keyframes ticker {
   100% {
-    -webkit-transform: translateX(-489.969px);
-            transform: translateX(-489.969px);
+    -webkit-transform: translateX(-448.2px);
+            transform: translateX(-448.2px);
   }
 }
 
 @keyframes ticker {
   100% {
-    -webkit-transform: translateX(-489.969px);
-            transform: translateX(-489.969px);
+    -webkit-transform: translateX(-448.2px);
+            transform: translateX(-448.2px);
   }
 }
 .plug {
@@ -5492,14 +5492,14 @@ body {
     padding-bottom: 20px;
   }
 }
+@media (max-width: 991.98px) and (max-height: 700px) {
+  .plug__content {
+    height: 750px;
+  }
+}
 @media (max-width: 400px) {
   .plug__content {
     padding-left: 30px;
-  }
-}
-@media (max-height: 700px) {
-  .plug__content {
-    height: 750px;
   }
 }
 .plug__leftside {
@@ -5549,6 +5549,11 @@ body {
     padding-bottom: unset;
   }
 }
+@media (min-width: 992px) and (max-height: 700px) {
+  .plug__sponsors {
+    padding-bottom: unset;
+  }
+}
 .plug__sponsors-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5586,7 +5591,7 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -2px;
   left: 34px;
   height: 2px;
   background: #000;
@@ -5772,6 +5777,11 @@ body {
   background: #beac83;
   z-index: -5;
 }
+@media (min-width: 992px) and (max-height: 700px) {
+  .plug__table {
+    margin-bottom: 150px;
+  }
+}
 @media (max-width: 991.98px) {
   .plug__table {
     height: auto;
@@ -5870,7 +5880,6 @@ body {
   }
 }
 .plug__ticker {
-  font-family: "PT Serif Caption";
   line-height: 1.5;
   color: #ef0a7c;
   margin-bottom: 17px;
@@ -6166,11 +6175,6 @@ body {
   position: absolute;
   right: 28px;
   bottom: 18px;
-}
-@media (min-width: 992px) {
-  .plug-card__sponsor-mobile {
-    display: none;
-  }
 }
 
 [data-aos=barcode] {
