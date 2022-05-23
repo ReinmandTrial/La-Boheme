@@ -621,7 +621,7 @@
       &-wrap {
          filter: brightness(0.9) grayscale(1) sepia(0.2) saturate(0);
          animation: bgY 100s linear infinite;
-         background: url(../img/offset_931554.jpeg) 0px 0px / 100% 100% repeat-y;
+         background: url(../img/image.jpg) 0px 0px / 100% 100% repeat-y;
          width: 100%;
          height: 100%;
       }
@@ -1311,10 +1311,10 @@ body {
    }
 }
 .no-webp .home__main-image-wrap {
-   background: url(../img/offset_931554.jpg) 0 0/100% 100% repeat-y !important;
+   background: url(../img/image.jpg) 0 0/100% 100% repeat-y !important;
 }
 .no-webp .plug__main-image-wrap {
-   background: url(../img/offset_931554.jpg) 0 0/100% 100% repeat-y !important;
+   background: url(../img/image.jpg) 0 0/100% 100% repeat-y !important;
 }
 
 @keyframes ticker {
@@ -1485,7 +1485,7 @@ body {
       &-wrap {
          filter: brightness(0.9) grayscale(1) sepia(0.2) saturate(0);
          animation: bgY 100s linear infinite;
-         background: url("../img/offset_931554.webp") 0px 0px / 100% 100% repeat-y;
+         background: url("../img/image.webp") 0px 0px / 100% 100% repeat-y;
          width: 100%;
          height: 100%;
       }
@@ -1551,14 +1551,22 @@ body {
       }
    }
    &__table {
-      // position: relative;
-      // z-index: 10;
-      height: 412px;
       margin-bottom: 182px;
-      background: $bg;
       max-width: 535px;
       margin-right: 11%;
       position: relative;
+      height: 412px;
+      // background: $bg;
+      &-bg {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: $bg;
+         z-index: -5;
+      }
       @media (max-width: 991.98px) {
          height: auto;
          position: relative;
@@ -1569,7 +1577,7 @@ body {
          @media (max-height: 870px) {
             margin-top: 395px;
          }
-         &::after {
+         &-bg2-mobile {
             content: "";
             position: absolute;
             bottom: 98%;
@@ -1595,17 +1603,10 @@ body {
       left: -254px;
       z-index: 5;
       flex: none;
+      transform: translateY(0vh);
       img {
          transform: translateY(10%);
          @media (max-width: 991.98px) {
-            width: 230px;
-         }
-      }
-      @media (max-height: 750px) {
-         width: 310px;
-         height: 310px;
-         margin-bottom: 20px;
-         img {
             width: 230px;
          }
       }
@@ -1741,6 +1742,8 @@ body {
          height: 100%;
          background: $bg;
          transition: transform 0.4s ease;
+         z-index: 5;
+         pointer-events: none;
       }
       &:not(.swiper-slide-active) {
          // transform-origin: center bottom;
@@ -1754,7 +1757,7 @@ body {
          // height: 100%;
       }
       &.swiper-slide-active {
-         z-index: 5;
+         z-index: 10 !important;
          opacity: 1;
          transition: opacity 0s ease 0.4s;
          &::before {
@@ -1879,6 +1882,7 @@ body {
    &.aos-animate {
       // transform: translateY(0vh);
       transform: unset;
+      transform: translateY(0vh);
    }
 }
 [data-aos="reverse-table"] {
