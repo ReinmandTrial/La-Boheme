@@ -602,7 +602,7 @@
          background-position: 0 0px;
       }
       100% {
-         background-position: 0 -1000px;
+         background-position: 0 -10000px;
       }
    }
    &__main-image {
@@ -620,7 +620,7 @@
       }
       &-wrap {
          filter: brightness(0.9) grayscale(1) sepia(0.2) saturate(0);
-         animation: bgY 100s linear infinite;
+         animation: bgY 1000s linear infinite;
          background: url(../img/image.jpg) 0px 0px / 100% 100% repeat-y;
          width: 100%;
          height: 100%;
@@ -1484,8 +1484,8 @@ body {
 
       &-wrap {
          filter: brightness(0.9) grayscale(1) sepia(0.2) saturate(0);
-         animation: bgY 100s linear infinite;
-         background: url("../img/image.webp") 0px 0px / 100% 100% repeat-y;
+         animation: bgY 1000s linear infinite;
+         background: url("../img/image.jpg") 0px 0px / 100% 100% repeat-y;
          width: 100%;
          height: 100%;
       }
