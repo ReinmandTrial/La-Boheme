@@ -1373,8 +1373,19 @@ body {
          margin: 0;
          overflow: hidden;
          border-right: none;
-         border-left: 2px solid #000;
+         // border-left: 2px solid #000;
          width: 100%;
+         padding-left: 2px;
+         position: relative;
+         &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 10px;
+            width: 2px;
+            background: #000;
+         }
       }
    }
 
@@ -1396,7 +1407,7 @@ body {
       justify-content: center;
       align-items: center;
       @media (max-width: 991.98px) {
-         column-gap: 25px;
+         column-gap: 23px;
          justify-content: flex-start;
       }
       &:not(:last-child) {
@@ -1438,7 +1449,7 @@ body {
       &--2 {
          @media (max-width: 991.98px) {
             order: 1;
-            margin-top: -10px;
+            margin-top: -7px;
             margin-left: -10px;
          }
          img {
@@ -1467,11 +1478,27 @@ body {
          padding: 20px 0 40px;
       }
       @media (max-width: 991.98px) {
+         margin-right: 17px;
          padding-top: 90px;
          flex: 1 1 auto;
          padding: 0;
          justify-content: flex-start;
-         border-left: 2px solid #000;
+         // border-left: 2px solid #000;
+         padding-left: 2px;
+         &::before {
+            content: "";
+            position: absolute;
+            top: 90px;
+            left: 0;
+            bottom: 0;
+            width: 2px;
+            background: #000;
+         }
+         @media (max-height: 870px) {
+            &::before {
+               top: 40px;
+            }
+         }
       }
    }
    &__main-image {
@@ -1553,14 +1580,14 @@ body {
       }
    }
    &__table {
-      margin-bottom: 182px;
-      max-width: 535px;
-      margin-right: 11%;
+      margin-bottom: 135px;
+      max-width: 540px;
+      margin-right: 3%;
       position: relative;
       height: 412px;
+      // width: 89%;
       // background: $bg;
       &-bg {
-         content: "";
          position: absolute;
          top: 0;
          left: 0;
@@ -1570,25 +1597,25 @@ body {
          z-index: -5;
       }
       @media (min-width: 992px) and (max-height: 700px) {
-         margin-bottom: 150px;
+         margin-bottom: 100px;
       }
       @media (max-width: 991.98px) {
          height: auto;
          position: relative;
          margin-bottom: 50px;
          margin-top: 463px;
-         padding: 20px 0;
+         padding: 15px 0 0;
          transition-delay: 3s !important;
          @media (max-height: 870px) {
             margin-top: 395px;
          }
          &-bg2-mobile {
-            content: "";
             position: absolute;
             bottom: 98%;
             right: 0;
             height: 310px;
-            width: 180px;
+            left: 42%;
+            // width: 180px;
             background: $bg;
          }
       }
@@ -1655,6 +1682,7 @@ body {
       margin-bottom: 17px;
       overflow: hidden;
       font-style: italic;
+      font-size: 14px;
       @media (max-width: 991.98px) {
          position: absolute;
          top: 70px;
@@ -1719,7 +1747,7 @@ body {
       margin-left: 123px;
       padding: 0 40px;
       @media (max-width: 991.98px) {
-         padding: 0px 15px;
+         padding: 0px 15px 0 12px;
          margin-left: unset;
       }
    }
@@ -1841,13 +1869,16 @@ body {
       text-transform: uppercase;
    }
    &__btn {
-      padding: 1px 6px;
+      padding: 3px 6px 0;
       background: $pink;
       width: fit-content;
       font-family: "Bellefair";
       font-size: 21px;
 
       letter-spacing: -0.03em;
+      @media (max-width: 991.98px) {
+         min-width: 125px;
+      }
       span {
          transition: 0.2s ease;
       }
@@ -1860,10 +1891,14 @@ body {
    }
    &__sponsor-mobile {
       display: block;
-      width: 93px;
       position: absolute;
-      right: 28px;
-      bottom: 18px;
+      right: 2px;
+      bottom: 5px;
+      @media (max-width: 991.98px) {
+         width: 93px;
+         right: 13px;
+         bottom: 18px;
+      }
    }
 }
 [data-aos="barcode"] {
