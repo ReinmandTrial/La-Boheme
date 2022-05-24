@@ -1319,7 +1319,7 @@ body {
 
 @keyframes ticker {
    100% {
-      transform: translateX(-409.675px);
+      transform: translateX(-16386.7px);
       // width: 12px;
    }
 }
@@ -1709,7 +1709,7 @@ body {
          }
       }
       span {
-         animation: ticker 8s linear infinite;
+         animation: ticker 320s linear infinite;
          display: block;
          width: fit-content;
          white-space: nowrap;

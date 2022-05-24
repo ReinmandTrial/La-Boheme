@@ -5445,15 +5445,15 @@ body {
 
 @-webkit-keyframes ticker {
   100% {
-    -webkit-transform: translateX(-409.675px);
-            transform: translateX(-409.675px);
+    -webkit-transform: translateX(-16386.7px);
+            transform: translateX(-16386.7px);
   }
 }
 
 @keyframes ticker {
   100% {
-    -webkit-transform: translateX(-409.675px);
-            transform: translateX(-409.675px);
+    -webkit-transform: translateX(-16386.7px);
+            transform: translateX(-16386.7px);
   }
 }
 .plug {
@@ -5952,8 +5952,8 @@ body {
   }
 }
 .plug__ticker span {
-  -webkit-animation: ticker 8s linear infinite;
-          animation: ticker 8s linear infinite;
+  -webkit-animation: ticker 320s linear infinite;
+          animation: ticker 320s linear infinite;
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
