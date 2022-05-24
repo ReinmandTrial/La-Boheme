@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (plugCards.realIndex != 3) {
                if (plugCards.realIndex == 0) {
                   if (swipeWait == true) {
-                     // swipeWait = false
+                     swipeWait = false
                   } else if (swipeWait == false) {
                      plugCards.slideNext();
                      swipeWait = true

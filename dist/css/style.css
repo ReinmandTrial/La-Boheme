@@ -5445,15 +5445,15 @@ body {
 
 @-webkit-keyframes ticker {
   100% {
-    -webkit-transform: translateX(-448.2px);
-            transform: translateX(-448.2px);
+    -webkit-transform: translateX(-409.675px);
+            transform: translateX(-409.675px);
   }
 }
 
 @keyframes ticker {
   100% {
-    -webkit-transform: translateX(-448.2px);
-            transform: translateX(-448.2px);
+    -webkit-transform: translateX(-409.675px);
+            transform: translateX(-409.675px);
   }
 }
 .plug {
@@ -5787,7 +5787,7 @@ body {
 }
 .plug__table {
   margin-bottom: 135px;
-  max-width: 540px;
+  max-width: 537px;
   margin-right: 3%;
   position: relative;
   height: 412px;
