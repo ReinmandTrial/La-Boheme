@@ -5456,19 +5456,29 @@ body {
             transform: translateX(-16386.7px);
   }
 }
+@media (min-height: 700px) and (max-width: 991.98px) {
+  .page-plug {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    min-height: unset;
+  }
+}
+
 .plug {
   min-height: 100vh;
   overflow: hidden;
+}
+@media (max-height: 700px) {
+  .plug {
+    height: 750px;
+  }
 }
 .plug__container {
   max-width: 910px;
   margin: 0 auto;
   height: 100vh;
-}
-@media (max-height: 750px) {
-  .plug__container {
-    height: 750px;
-  }
 }
 .plug__content {
   height: 100vh;
