@@ -4627,7 +4627,7 @@ textarea {
   }
 }
 .no-webp .home__main-image-wrap {
-  background: url(../img/image.jpg) 0px 0px/100% 100% repeat-y; }
+  background: url(../img/image.jpg) 0 0px/100% 100% repeat-y; }
 .home__main-image-wrap {
   -webkit-filter: brightness(0.9) grayscale(1) sepia(0.2) saturate(0);
           filter: brightness(0.9) grayscale(1) sepia(0.2) saturate(0);
@@ -5445,15 +5445,15 @@ body {
 
 @-webkit-keyframes ticker {
   100% {
-    -webkit-transform: translateX(-16386.7px);
-            transform: translateX(-16386.7px);
+    -webkit-transform: translateX(-19571.8px);
+            transform: translateX(-19571.8px);
   }
 }
 
 @keyframes ticker {
   100% {
-    -webkit-transform: translateX(-16386.7px);
-            transform: translateX(-16386.7px);
+    -webkit-transform: translateX(-19571.8px);
+            transform: translateX(-19571.8px);
   }
 }
 @media (min-height: 700px) and (max-width: 991.98px) {
@@ -5727,7 +5727,7 @@ body {
   overflow: hidden;
 }
 .no-webp .plug__main-image-wrap {
-  background: url("../img/image.jpg") 0px 0px/100% 100% repeat-y; }
+  background: url("../img/image.jpg") 0 0/100% 100% repeat-y; }
 .plug__main-image-wrap {
   -webkit-filter: brightness(0.9) grayscale(1) sepia(0.2) saturate(0);
           filter: brightness(0.9) grayscale(1) sepia(0.2) saturate(0);
@@ -5735,6 +5735,9 @@ body {
           animation: bgY 1000s linear infinite;
   width: 100%;
   height: 100%;
+  -webkit-transition-delay: background-size 1.6s;
+       -o-transition-delay: background-size 1.6s;
+          transition-delay: background-size 1.6s;
 }
 .plug__main-image span {
   z-index: 3;
@@ -5913,12 +5916,11 @@ body {
   }
 }
 .plug__ticker {
+  font-family: "PT Serif Caption";
   line-height: 1.5;
-  color: #ef0a7c;
   margin-bottom: 17px;
   overflow: hidden;
   font-style: italic;
-  font-size: 14px;
 }
 @media (max-width: 991.98px) {
   .plug__ticker {
@@ -5962,8 +5964,8 @@ body {
   }
 }
 .plug__ticker span {
-  -webkit-animation: ticker 320s linear infinite;
-          animation: ticker 320s linear infinite;
+  -webkit-animation: ticker 320s linear 12s infinite;
+          animation: ticker 320s linear 12s infinite;
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -5975,12 +5977,16 @@ body {
   z-index: 10;
   margin-right: 30px;
   margin-bottom: 70px;
+  max-width: 470px;
 }
 @media (max-width: 991.98px) {
   .plug__text-logo {
+    max-width: 311px;
+    width: calc(100% - 115px);
     position: absolute;
     top: 150px;
     left: 75px;
+    right: 0;
     margin-right: 40px;
     z-index: 40;
   }
@@ -6236,6 +6242,9 @@ body {
   width: 100%;
   padding-left: 0;
 }
+[data-aos=barcode].aos-animate .plug__main-image-wrap {
+  background-size: 100% auto;
+}
 
 [data-aos=table] {
   -webkit-transition-property: -webkit-transform;
@@ -6271,7 +6280,7 @@ body {
       -ms-transform: unset;
           transform: unset;
 }
-.webp .home__main-image-wrap { background: url(../img/image.webp) 0px 0px/100% 100% repeat-y; }
+.webp .home__main-image-wrap { background: url(../img/image.webp) 0 0px/100% 100% repeat-y; }
 .webp .no-webp .home__main-image-wrap { background: url(../img/image.webp) 0 0/100% 100% repeat-y !important; }
 .webp .no-webp .plug__main-image-wrap { background: url(../img/image.webp) 0 0/100% 100% repeat-y !important; }
-.webp .plug__main-image-wrap { background: url(../img/image.webp) 0px 0px/100% 100% repeat-y; }
+.webp .plug__main-image-wrap { background: url(../img/image.webp) 0 0/100% 100% repeat-y; }
