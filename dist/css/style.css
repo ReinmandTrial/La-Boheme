@@ -5445,15 +5445,15 @@ body {
 
 @-webkit-keyframes ticker {
   100% {
-    -webkit-transform: translateX(-17125.4px);
-            transform: translateX(-17125.4px);
+    -webkit-transform: translateX(-872.15px);
+            transform: translateX(-872.15px);
   }
 }
 
 @keyframes ticker {
   100% {
-    -webkit-transform: translateX(-17125.4px);
-            transform: translateX(-17125.4px);
+    -webkit-transform: translateX(-872.15px);
+            transform: translateX(-872.15px);
   }
 }
 @media (min-height: 700px) and (max-width: 991.98px) {
@@ -5965,8 +5965,8 @@ body {
 }
 .plug__ticker span {
   font-size: 14px;
-  -webkit-animation: ticker 450s linear infinite;
-          animation: ticker 450s linear infinite;
+  -webkit-animation: ticker 10s linear infinite;
+          animation: ticker 10s linear infinite;
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -5999,6 +5999,9 @@ body {
   .plug__text-logo {
     top: 90px;
   }
+}
+.plug__text-logo img {
+  width: 100%;
 }
 .plug__text-logo.--mobile {
   -webkit-transform: translateY(-50vh);
@@ -6242,9 +6245,6 @@ body {
 [data-aos=barcode].aos-animate {
   width: 100%;
   padding-left: 0;
-}
-[data-aos=barcode].aos-animate .plug__main-image-wrap {
-  background-size: 100% auto;
 }
 
 [data-aos=table] {

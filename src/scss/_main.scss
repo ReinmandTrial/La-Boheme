@@ -1319,7 +1319,7 @@ body {
 
 @keyframes ticker {
    100% {
-      transform: translateX(-17125.4px);
+      transform: translateX(-872.15px);
       // width: 12px;
    }
 }
@@ -1689,7 +1689,6 @@ body {
    &__ticker {
       font-family: "PT Serif Caption";
       line-height: 1.5;
-      // color: $pink;
       margin-bottom: 17px;
       overflow: hidden;
       font-style: italic;
@@ -1720,7 +1719,7 @@ body {
       }
       span {
          font-size: 14px;
-         animation: ticker 450s linear infinite;
+         animation: ticker 10s linear infinite;
          display: block;
          width: fit-content;
          white-space: nowrap;
@@ -1754,6 +1753,9 @@ body {
          @media (max-height: 870px) {
             top: 90px;
          }
+      }
+      & img {
+         width: 100%;
       }
       &.--mobile {
          transform: translateY(-50vh);
@@ -1925,27 +1927,18 @@ body {
 [data-aos="barcode"] {
    width: 0%;
    transition-property: padding, width;
-   // transform: translateX(60px);
    padding-left: 60px;
    transition-timing-function: ease-in, cubic-bezier(0.5, 0.69, 0.18, 1.18) !important;
-   // .plug__main-image-wrap {
-   //    transition: background-size 1.6s linear 1.6s;
-   // }
+
    &.aos-animate {
       width: 100%;
       padding-left: 0;
-      .plug__main-image-wrap {
-         background-size: 100% auto;
-         //    transition: background-size 0s linear 1.6s;
-      }
-      // transform: translateX(0px);
    }
 }
 [data-aos="table"] {
    transition-property: transform;
    transform: translateY(-100vh);
    &.aos-animate {
-      // transform: translateY(0vh);
       transform: unset;
       transform: translateY(0vh);
    }

@@ -157,9 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                plugCards.slideTo(0)
             }
-            console.log(plugCards.realIndex);
 
-            console.log('next');
          }, 4000)
       }, 4200)
 
