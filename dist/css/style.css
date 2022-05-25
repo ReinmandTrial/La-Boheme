@@ -5965,8 +5965,8 @@ body {
 }
 .plug__ticker span {
   font-size: 14px;
-  -webkit-animation: ticker 10s linear infinite;
-          animation: ticker 10s linear infinite;
+  -webkit-animation: ticker 25s linear infinite;
+          animation: ticker 25s linear infinite;
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
