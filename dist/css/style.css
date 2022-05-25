@@ -5727,7 +5727,7 @@ body {
   overflow: hidden;
 }
 .no-webp .plug__main-image-wrap {
-  background: url("../img/image.jpg") 0 0/100% 100% repeat-y; }
+  background: url("../img/image.jpg") -50% 0/100% 100% repeat-y; }
 .plug__main-image-wrap {
   -webkit-filter: brightness(0.9) grayscale(1) sepia(0.2) saturate(0);
           filter: brightness(0.9) grayscale(1) sepia(0.2) saturate(0);
@@ -6283,4 +6283,4 @@ body {
 .webp .home__main-image-wrap { background: url(../img/image.webp) 0 0px/100% 100% repeat-y; }
 .webp .no-webp .home__main-image-wrap { background: url(../img/image.webp) 0 0/100% 100% repeat-y !important; }
 .webp .no-webp .plug__main-image-wrap { background: url(../img/image.webp) 0 0/100% 100% repeat-y !important; }
-.webp .plug__main-image-wrap { background: url(../img/image.webp) 0 0/100% 100% repeat-y; }
+.webp .plug__main-image-wrap { background: url(../img/image.webp) -50% 0/100% 100% repeat-y; }
