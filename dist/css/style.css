@@ -5964,8 +5964,8 @@ body {
   }
 }
 .plug__ticker span {
-  -webkit-animation: ticker 320s linear 12s infinite;
-          animation: ticker 320s linear 12s infinite;
+  -webkit-animation: ticker 320s linear infinite;
+          animation: ticker 320s linear infinite;
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;

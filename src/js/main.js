@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(plugCards.realIndex);
 
             console.log('next');
-         }, 5000)
+         }, 4000)
       }, 4200)
 
 
