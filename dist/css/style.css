@@ -5491,15 +5491,15 @@ body {
 @media (max-width: 991.98px) {
   .plug__content {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    padding: 0px 0 90px 80px;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0 0 80px;
   }
 }
 @media (max-width: 991.98px) and (max-height: 870px) {
   .plug__content {
-    padding-bottom: 20px;
+    padding-top: 20px;
   }
 }
 @media (max-width: 991.98px) and (max-height: 700px) {
@@ -5548,13 +5548,14 @@ body {
     width: 100%;
     padding-left: 2px;
     position: relative;
+    z-index: 10;
   }
   .plug__leftside::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 38px;
     left: 0;
-    bottom: 10px;
+    bottom: 0px;
     width: 2px;
     background: #000;
   }
@@ -5590,9 +5591,9 @@ body {
 }
 @media (max-width: 991.98px) {
   .plug__sponsors-row {
-    -webkit-column-gap: 23px;
-       -moz-column-gap: 23px;
-            column-gap: 23px;
+    -webkit-column-gap: 21px;
+       -moz-column-gap: 21px;
+            column-gap: 21px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -5604,7 +5605,8 @@ body {
 }
 @media (max-width: 991.98px) {
   .plug__sponsors-row:not(:last-child) {
-    margin-bottom: -10px;
+    margin-bottom: -9px;
+    margin-left: -14px;
   }
 }
 .plug__sponsors-row:not(:last-child)::after {
@@ -5618,10 +5620,9 @@ body {
 }
 @media (max-width: 991.98px) {
   .plug__sponsors-row:not(:last-child)::after {
-    bottom: unset;
-    top: 0;
+    bottom: 9px;
     left: 0;
-    right: 85px;
+    right: 83px;
   }
 }
 .plug__sponsors-item {
@@ -5644,8 +5645,6 @@ body {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin-top: -7px;
-    margin-left: -10px;
   }
 }
 .plug__sponsors-item--2 img {
@@ -5696,24 +5695,16 @@ body {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
     padding: 0;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     padding-left: 2px;
   }
   .plug__rightside::before {
     content: "";
     position: absolute;
-    top: 90px;
+    top: 0px;
+    height: 675px;
     left: 0;
-    bottom: 0;
     width: 2px;
     background: #000;
-  }
-}
-@media (max-width: 991.98px) and (max-height: 870px) {
-  .plug__rightside::before {
-    top: 40px;
   }
 }
 .plug__main-image {
@@ -5823,9 +5814,9 @@ body {
   .plug__table {
     height: auto;
     position: relative;
-    margin-bottom: 50px;
-    margin-top: 463px;
-    padding: 15px 0 0;
+    margin-bottom: 167px;
+    margin-top: 350px;
+    padding: 40px 0 0;
     -webkit-transition-delay: 3s !important;
          -o-transition-delay: 3s !important;
             transition-delay: 3s !important;
@@ -5833,17 +5824,27 @@ body {
 }
 @media (max-width: 991.98px) and (max-height: 870px) {
   .plug__table {
-    margin-top: 395px;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 991.98px) and (max-height: 750px) {
+  .plug__table {
+    margin-top: 280px;
   }
 }
 @media (max-width: 991.98px) {
   .plug__table-bg2-mobile {
     position: absolute;
-    bottom: 98%;
+    top: 0;
     right: 0;
-    height: 310px;
-    left: 42%;
+    height: 233px;
+    left: 53%;
     background: #beac83;
+  }
+}
+@media (max-width: 991.98px) and (max-height: 750px) {
+  .plug__table-bg2-mobile {
+    left: 47%;
   }
 }
 .plug__logo {
@@ -5884,7 +5885,7 @@ body {
 @media (max-width: 991.98px) {
   .plug__logo {
     position: absolute;
-    top: 117px;
+    top: 170px;
     left: -18px;
     width: 310px;
     height: 310px;
@@ -5893,7 +5894,7 @@ body {
 }
 @media (max-width: 991.98px) and (max-height: 870px) {
   .plug__logo {
-    top: 57px;
+    top: 120px;
   }
 }
 @media (max-width: 991.98px) and (max-height: 750px) {
@@ -5926,9 +5927,10 @@ body {
 @media (max-width: 991.98px) {
   .plug__ticker {
     position: absolute;
-    top: 70px;
+    top: 775px;
     left: 0;
     width: 100%;
+    margin-bottom: unset;
     z-index: 50;
   }
   .plug__ticker:not(.--mobile) {
@@ -5937,7 +5939,13 @@ body {
 }
 @media (max-width: 991.98px) and (max-height: 870px) {
   .plug__ticker {
-    top: 20px;
+    top: 745px;
+  }
+}
+@media (max-width: 991.98px) and (max-height: 870px) {
+  .plug__ticker {
+    top: unset;
+    bottom: 20px;
   }
 }
 @-webkit-keyframes drop {
@@ -5953,11 +5961,11 @@ body {
   }
 }
 .plug__ticker.--mobile {
-  -webkit-transform: translateY(-50vh);
-      -ms-transform: translateY(-50vh);
-          transform: translateY(-50vh);
-  -webkit-animation: drop 0.7s ease 2s forwards;
-          animation: drop 0.7s ease 2s forwards;
+  -webkit-transform: translateY(-100vh);
+      -ms-transform: translateY(-100vh);
+          transform: translateY(-100vh);
+  -webkit-animation: drop 0.7s ease 1.8s forwards;
+          animation: drop 0.7s ease 1.8s forwards;
 }
 @media (min-width: 992px) {
   .plug__ticker.--mobile {
@@ -5983,10 +5991,10 @@ body {
 }
 @media (max-width: 991.98px) {
   .plug__text-logo {
-    max-width: 311px;
-    width: calc(100% - 115px);
+    max-width: 318px;
+    width: calc(100% - 111px);
     position: absolute;
-    top: 150px;
+    top: 208px;
     left: 75px;
     right: 0;
     margin-right: 40px;
@@ -5998,7 +6006,13 @@ body {
 }
 @media (max-width: 991.98px) and (max-height: 870px) {
   .plug__text-logo {
-    top: 90px;
+    top: 158px;
+  }
+}
+@media (max-width: 991.98px) and (max-height: 750px) {
+  .plug__text-logo {
+    top: 150px;
+    width: calc(100% - 128px);
   }
 }
 .plug__text-logo img {
@@ -6008,8 +6022,8 @@ body {
   -webkit-transform: translateY(-50vh);
       -ms-transform: translateY(-50vh);
           transform: translateY(-50vh);
-  -webkit-animation: drop 0.7s ease 2.3s forwards;
-          animation: drop 0.7s ease 2.3s forwards;
+  -webkit-animation: drop 0.7s ease 1.7s forwards;
+          animation: drop 0.7s ease 1.7s forwards;
 }
 @media (min-width: 992px) {
   .plug__text-logo.--mobile {

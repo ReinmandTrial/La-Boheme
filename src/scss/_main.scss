@@ -1351,10 +1351,10 @@ body {
       position: relative;
       z-index: 50;
       @media (max-width: 991.98px) {
-         flex-direction: column-reverse;
-         padding: 0px 0 90px 80px;
+         flex-direction: column;
+         padding: 50px 0 0 80px;
          @media (max-height: 870px) {
-            padding-bottom: 20px;
+            padding-top: 20px;
          }
          @media (max-height: 700px) {
             height: 750px;
@@ -1387,12 +1387,13 @@ body {
          width: 100%;
          padding-left: 2px;
          position: relative;
+         z-index: 10;
          &::before {
             content: "";
             position: absolute;
-            top: 0;
+            top: 38px;
             left: 0;
-            bottom: 10px;
+            bottom: 0px;
             width: 2px;
             background: #000;
          }
@@ -1417,14 +1418,15 @@ body {
       justify-content: center;
       align-items: center;
       @media (max-width: 991.98px) {
-         column-gap: 23px;
+         column-gap: 21px;
          justify-content: flex-start;
       }
       &:not(:last-child) {
          position: relative;
          margin-bottom: 23px;
          @media (max-width: 991.98px) {
-            margin-bottom: -10px;
+            margin-bottom: -9px;
+            margin-left: -14px;
          }
          &::after {
             content: "";
@@ -1435,10 +1437,11 @@ body {
             height: 2px;
             background: #000;
             @media (max-width: 991.98px) {
-               bottom: unset;
-               top: 0;
+               // bottom: unset;
+               // top: 0;
+               bottom: 9px;
                left: 0;
-               right: 85px;
+               right: 83px;
             }
          }
       }
@@ -1459,8 +1462,7 @@ body {
       &--2 {
          @media (max-width: 991.98px) {
             order: 1;
-            margin-top: -7px;
-            margin-left: -10px;
+            // margin-left: -10px;
          }
          img {
             width: 226px;
@@ -1492,21 +1494,21 @@ body {
          padding-top: 90px;
          flex: 1 1 auto;
          padding: 0;
-         justify-content: flex-start;
+         // justify-content: flex-start;
          // border-left: 2px solid #000;
          padding-left: 2px;
          &::before {
             content: "";
             position: absolute;
-            top: 90px;
+            top: 0px;
+            // bottom: 112px;
+            height: 675px;
             left: 0;
-            bottom: 0;
             width: 2px;
             background: #000;
          }
          @media (max-height: 870px) {
             &::before {
-               top: 40px;
             }
          }
       }
@@ -1613,21 +1615,32 @@ body {
       @media (max-width: 991.98px) {
          height: auto;
          position: relative;
-         margin-bottom: 50px;
-         margin-top: 463px;
-         padding: 15px 0 0;
+         margin-bottom: 167px;
+         margin-top: 350px;
+         padding: 40px 0 0;
          transition-delay: 3s !important;
          @media (max-height: 870px) {
-            margin-top: 395px;
+            // margin-top: 395px;
+            margin-bottom: 80px;
+         }
+         @media (max-height: 800px) {
+            // margin-top: 345px;
+         }
+         @media (max-height: 750px) {
+            // margin-top: 305px;
+            margin-top: 280px;
          }
          &-bg2-mobile {
             position: absolute;
-            bottom: 98%;
+            top: 0;
             right: 0;
-            height: 310px;
-            left: 42%;
+            height: 233px;
+            left: 53%;
             // width: 180px;
             background: $bg;
+            @media (max-height: 750px) {
+               left: 47%;
+            }
          }
       }
    }
@@ -1639,8 +1652,6 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      // margin-left: auto;
-      // margin-right: -113px;
       position: absolute;
       top: 8px;
       left: -254px;
@@ -1655,13 +1666,14 @@ body {
       }
       @media (max-width: 991.98px) {
          position: absolute;
-         top: 117px;
+         top: 170px;
          left: -18px;
          width: 310px;
          height: 310px;
          z-index: 30;
          @media (max-height: 870px) {
-            top: 57px;
+            // top: 57px;
+            top: 120px;
          }
          @media (max-height: 750px) {
             width: 270px;
@@ -1695,15 +1707,20 @@ body {
       font-style: italic;
       @media (max-width: 991.98px) {
          position: absolute;
-         top: 70px;
+         top: 775px;
          left: 0;
          width: 100%;
+         margin-bottom: unset;
          z-index: 50;
          &:not(.--mobile) {
             display: none;
          }
          @media (max-height: 870px) {
-            top: 20px;
+            top: 745px;
+         }
+         @media (max-height: 870px) {
+            top: unset;
+            bottom: 20px;
          }
       }
       @keyframes drop {
@@ -1712,8 +1729,8 @@ body {
          }
       }
       &.--mobile {
-         transform: translateY(-50vh);
-         animation: drop 0.7s ease 2s forwards;
+         transform: translateY(-100vh);
+         animation: drop 0.7s ease 1.8s forwards;
          @media (min-width: 992px) {
             display: none;
          }
@@ -1740,10 +1757,10 @@ body {
       margin-bottom: 70px;
       max-width: 470px;
       @media (max-width: 991.98px) {
-         max-width: 311px;
-         width: calc(100% - 115px);
+         max-width: 318px;
+         width: calc(100% - 111px);
          position: absolute;
-         top: 150px;
+         top: 208px;
          left: 75px;
          right: 0;
          margin-right: 40px;
@@ -1752,7 +1769,11 @@ body {
             display: none;
          }
          @media (max-height: 870px) {
-            top: 90px;
+            top: 158px;
+         }
+         @media (max-height: 750px) {
+            top: 150px;
+            width: calc(100% - 128px);
          }
       }
       & img {
@@ -1760,7 +1781,7 @@ body {
       }
       &.--mobile {
          transform: translateY(-50vh);
-         animation: drop 0.7s ease 2.3s forwards;
+         animation: drop 0.7s ease 1.7s forwards;
          @media (min-width: 992px) {
             display: none;
          }
