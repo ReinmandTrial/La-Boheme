@@ -5445,15 +5445,15 @@ body {
 
 @-webkit-keyframes ticker {
   100% {
-    -webkit-transform: translateX(-19571.8px);
-            transform: translateX(-19571.8px);
+    -webkit-transform: translateX(-17125.4px);
+            transform: translateX(-17125.4px);
   }
 }
 
 @keyframes ticker {
   100% {
-    -webkit-transform: translateX(-19571.8px);
-            transform: translateX(-19571.8px);
+    -webkit-transform: translateX(-17125.4px);
+            transform: translateX(-17125.4px);
   }
 }
 @media (min-height: 700px) and (max-width: 991.98px) {
@@ -5964,8 +5964,9 @@ body {
   }
 }
 .plug__ticker span {
-  -webkit-animation: ticker 320s linear infinite;
-          animation: ticker 320s linear infinite;
+  font-size: 14px;
+  -webkit-animation: ticker 450s linear infinite;
+          animation: ticker 450s linear infinite;
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
