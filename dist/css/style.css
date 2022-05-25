@@ -4627,7 +4627,7 @@ textarea {
   }
 }
 .no-webp .home__main-image-wrap {
-  background: url(../img/image.jpg) 0 0px/100% 100% repeat-y; }
+  background: url(../img/image.jpg) left center/100% auto repeat-y; }
 .home__main-image-wrap {
   -webkit-filter: brightness(0.9) grayscale(1) sepia(0.2) saturate(0);
           filter: brightness(0.9) grayscale(1) sepia(0.2) saturate(0);
@@ -5438,22 +5438,22 @@ body {
 }
 
 .no-webp .no-webp .home__main-image-wrap {
-  background: url(../img/image.jpg) 0 0/100% 100% repeat-y !important; }
+  background: url(../img/image.jpg) left center/100% auto repeat-y !important; }
 
 .no-webp .no-webp .plug__main-image-wrap {
-  background: url(../img/image.jpg) 0 0/100% 100% repeat-y !important; }
+  background: url(../img/image.jpg) left center/100% auto repeat-y !important; }
 
 @-webkit-keyframes ticker {
   100% {
-    -webkit-transform: translateX(-872.15px);
-            transform: translateX(-872.15px);
+    -webkit-transform: translateX(-428.725px);
+            transform: translateX(-428.725px);
   }
 }
 
 @keyframes ticker {
   100% {
-    -webkit-transform: translateX(-872.15px);
-            transform: translateX(-872.15px);
+    -webkit-transform: translateX(-428.725px);
+            transform: translateX(-428.725px);
   }
 }
 @media (min-height: 700px) and (max-width: 991.98px) {
@@ -5727,7 +5727,7 @@ body {
   overflow: hidden;
 }
 .no-webp .plug__main-image-wrap {
-  background: url("../img/image.jpg") -50% 0/100% 100% repeat-y; }
+  background: url("../img/image.jpg") left center/100% auto repeat-y; }
 .plug__main-image-wrap {
   -webkit-filter: brightness(0.9) grayscale(1) sepia(0.2) saturate(0);
           filter: brightness(0.9) grayscale(1) sepia(0.2) saturate(0);
@@ -5920,6 +5920,7 @@ body {
   line-height: 1.5;
   margin-bottom: 17px;
   overflow: hidden;
+  color: #ef0a7c;
   font-style: italic;
 }
 @media (max-width: 991.98px) {
@@ -5965,8 +5966,8 @@ body {
 }
 .plug__ticker span {
   font-size: 14px;
-  -webkit-animation: ticker 25s linear infinite;
-          animation: ticker 25s linear infinite;
+  -webkit-animation: ticker 20s linear infinite;
+          animation: ticker 20s linear infinite;
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -6281,7 +6282,7 @@ body {
       -ms-transform: unset;
           transform: unset;
 }
-.webp .home__main-image-wrap { background: url(../img/image.webp) 0 0px/100% 100% repeat-y; }
-.webp .no-webp .home__main-image-wrap { background: url(../img/image.webp) 0 0/100% 100% repeat-y !important; }
-.webp .no-webp .plug__main-image-wrap { background: url(../img/image.webp) 0 0/100% 100% repeat-y !important; }
-.webp .plug__main-image-wrap { background: url(../img/image.webp) -50% 0/100% 100% repeat-y; }
+.webp .home__main-image-wrap { background: url(../img/image.webp) left center/100% auto repeat-y; }
+.webp .no-webp .home__main-image-wrap { background: url(../img/image.webp) left center/100% auto repeat-y !important; }
+.webp .no-webp .plug__main-image-wrap { background: url(../img/image.webp) left center/100% auto repeat-y !important; }
+.webp .plug__main-image-wrap { background: url(../img/image.webp) left center/100% auto repeat-y; }
