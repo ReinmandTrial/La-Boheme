@@ -6042,9 +6042,20 @@ body {
     top: 165px;
   }
 }
+@media (max-width: 400px) and (max-height: 750px) {
+  .plug__text-logo {
+    top: 145px;
+    width: calc(100% - 88px);
+  }
+}
 @media (max-width: 400px) and (max-height: 700px) {
   .plug__text-logo {
     top: 135px;
+  }
+}
+@media (max-width: 359px) {
+  .plug__text-logo {
+    width: calc(100% - 48px);
   }
 }
 .plug__text-logo img {
@@ -6078,6 +6089,12 @@ body {
     padding: 0px 15px 0 12px;
     margin-left: unset;
     pointer-events: none;
+  }
+}
+@media (max-width: 359px) {
+  .plug__slider {
+    margin-top: -15px;
+    margin-bottom: 15px;
   }
 }
 .plug__slider-wrapper {

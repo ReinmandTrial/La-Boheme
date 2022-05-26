@@ -1797,10 +1797,15 @@ body {
             top: 165px;
          }
          @media (max-height: 750px) {
+            top: 145px;
+            width: calc(100% - 88px);
          }
          @media (max-height: 700px) {
             top: 135px;
          }
+      }
+      @media (max-width: 359px) {
+         width: calc(100% - 48px);
       }
       & img {
          width: 100%;
@@ -1824,6 +1829,10 @@ body {
          padding: 0px 15px 0 12px;
          margin-left: unset;
          pointer-events: none;
+      }
+      @media (max-width: 359px) {
+         margin-top: -15px;
+         margin-bottom: 15px;
       }
    }
 
