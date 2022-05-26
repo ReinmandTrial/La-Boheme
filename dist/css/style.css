@@ -6058,6 +6058,7 @@ body {
   .plug__slider {
     padding: 0px 15px 0 12px;
     margin-left: unset;
+    pointer-events: none;
   }
 }
 .plug__slider-wrapper {
@@ -6240,6 +6241,7 @@ body {
 @media (max-width: 991.98px) {
   .plug-card__btn {
     min-width: 125px;
+    pointer-events: visible;
   }
 }
 .plug-card__btn span {

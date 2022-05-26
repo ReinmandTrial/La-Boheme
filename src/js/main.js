@@ -113,6 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
          },
          simulateTouch: false,
+         allowTouchMove: false,
          slidesPerView: 3,
          speed: 1000
       });
@@ -164,7 +165,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
    }
 
-
+   setTimeout(() => {
+      window.scrollTo(0, 200);
+   }, 500)
+   setTimeout(() => {
+      window.scrollTo(0, -200);
+   }, 500)
+   setTimeout(() => {
+      window.scrollTo(0, 200);
+   }, 500)
 
 })
 

@@ -1806,6 +1806,7 @@ body {
       @media (max-width: 991.98px) {
          padding: 0px 15px 0 12px;
          margin-left: unset;
+         pointer-events: none;
       }
    }
 
@@ -1935,6 +1936,7 @@ body {
       letter-spacing: -0.03em;
       @media (max-width: 991.98px) {
          min-width: 125px;
+         pointer-events: visible;
       }
       span {
          transition: 0.2s ease;
@@ -1975,7 +1977,6 @@ body {
    &.aos-animate {
       transform: unset;
       transform: translateY(0vh);
-      // transition-delay: 0s !important;
    }
 }
 
