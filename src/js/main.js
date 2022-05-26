@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
    }
 
    AOS.init({
-      once: false,
+      // once: false,
    });
    if ($('body').hasClass('page-plug')) {
       setTimeout(function () {

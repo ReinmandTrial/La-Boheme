@@ -1336,7 +1336,7 @@ body {
 .plug {
    min-height: 100vh;
    overflow: hidden;
-   @media (max-height: 700px) {
+   @media (max-height: 650px) {
       height: 750px;
    }
    &__container {
@@ -1357,6 +1357,9 @@ body {
             padding-top: 20px;
          }
          @media (max-height: 700px) {
+            padding-top: 0;
+         }
+         @media (max-height: 650px) {
             height: 750px;
          }
       }
@@ -1675,6 +1678,9 @@ body {
             // top: 57px;
             top: 120px;
          }
+         @media (max-height: 700px) {
+            top: 100px;
+         }
          @media (max-height: 750px) {
             width: 270px;
             height: 270px;
@@ -1775,6 +1781,12 @@ body {
             top: 150px;
             width: calc(100% - 128px);
          }
+         @media (max-height: 700px) {
+            top: 130px;
+         }
+      }
+      @media (max-width: 400px) {
+         left: 30px;
       }
       & img {
          width: 100%;
@@ -1963,8 +1975,10 @@ body {
    &.aos-animate {
       transform: unset;
       transform: translateY(0vh);
+      // transition-delay: 0s !important;
    }
 }
+
 [data-aos="reverse-table"] {
    transition-property: transform;
    transform: translateY(100vh);
