@@ -6034,6 +6034,17 @@ body {
 @media (max-width: 400px) {
   .plug__text-logo {
     left: 30px;
+    top: 220px;
+  }
+}
+@media (max-width: 400px) and (max-height: 870px) {
+  .plug__text-logo {
+    top: 165px;
+  }
+}
+@media (max-width: 400px) and (max-height: 700px) {
+  .plug__text-logo {
+    top: 135px;
   }
 }
 .plug__text-logo img {
@@ -6071,6 +6082,11 @@ body {
 }
 .plug__slider-wrapper {
   min-height: 185px;
+}
+@media (max-width: 359px) {
+  .plug__slider-wrapper {
+    min-height: 195px;
+  }
 }
 .plug__slide {
   height: initial;
@@ -6114,6 +6130,10 @@ body {
   -webkit-transition: 0.7s ease 0.6s;
   -o-transition: 0.7s ease 0.6s;
   transition: 0.7s ease 0.6s;
+}
+.plug__slide.swiper-slide-active .plug-card__sponsor-mobile,
+.plug__slide.swiper-slide-active .plug-card__btn {
+  pointer-events: visible;
 }
 
 @-webkit-keyframes slide {
@@ -6249,7 +6269,6 @@ body {
 @media (max-width: 991.98px) {
   .plug-card__btn {
     min-width: 125px;
-    pointer-events: visible;
   }
 }
 .plug-card__btn span {
@@ -6274,6 +6293,12 @@ body {
     width: 93px;
     right: 13px;
     bottom: 18px;
+  }
+}
+@media (max-width: 359px) {
+  .plug-card__sponsor-mobile {
+    right: 0;
+    bottom: 9px;
   }
 }
 

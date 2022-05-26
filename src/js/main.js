@@ -143,23 +143,23 @@ document.addEventListener('DOMContentLoaded', function () {
             },
          });
          var swipeWait = true
-         setInterval(function () {
-            if (plugCards.realIndex != 3) {
-               if (plugCards.realIndex == 0 || plugCards.realIndex == 1) {
-                  if (swipeWait == true) {
-                     swipeWait = false
-                  } else if (swipeWait == false) {
-                     plugCards.slideNext();
-                     swipeWait = true
-                  }
-               } else {
-                  plugCards.slideNext();
-               }
-            } else {
-               plugCards.slideTo(0)
-            }
+         // setInterval(function () {
+         //    if (plugCards.realIndex != 3) {
+         //       if (plugCards.realIndex == 0 || plugCards.realIndex == 1) {
+         //          if (swipeWait == true) {
+         //             swipeWait = false
+         //          } else if (swipeWait == false) {
+         //             plugCards.slideNext();
+         //             swipeWait = true
+         //          }
+         //       } else {
+         //          plugCards.slideNext();
+         //       }
+         //    } else {
+         //       plugCards.slideTo(0)
+         //    }
 
-         }, 4000)
+         // }, 4000)
       }, 4200)
 
 
