@@ -165,15 +165,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
    }
 
-   setTimeout(() => {
-      window.scrollTo(0, 200);
-   }, 500)
-   setTimeout(() => {
-      window.scrollTo(0, -200);
-   }, 500)
-   setTimeout(() => {
-      window.scrollTo(0, 200);
-   }, 500)
+
 
 })
 

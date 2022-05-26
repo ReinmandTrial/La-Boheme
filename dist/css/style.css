@@ -5456,17 +5456,6 @@ body {
             transform: translateX(-428.725px);
   }
 }
-@media (min-height: 700px) and (max-width: 991.98px) {
-  .page-plug {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    min-height: unset;
-  }
-}
-
 .plug {
   min-height: 100vh;
   overflow: hidden;
