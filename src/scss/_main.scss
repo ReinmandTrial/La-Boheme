@@ -1735,8 +1735,11 @@ body {
          }
       }
       &.--mobile {
-         transform: translateY(-100vh);
-         animation: drop 0.7s ease 1.8s forwards;
+         @media (max-width: 991.98px) {
+            transition-property: transform;
+            transform: translateY(-100vh);
+            animation: drop 0.7s ease 1.8s forwards;
+         }
          @media (min-width: 992px) {
             display: none;
          }
@@ -1792,8 +1795,11 @@ body {
          width: 100%;
       }
       &.--mobile {
-         transform: translateY(-50vh);
-         animation: drop 0.7s ease 1.7s forwards;
+         @media (max-width: 991.98px) {
+            transition-property: transform;
+            transform: translateY(-50vh);
+            animation: drop 0.7s ease 1.7s forwards;
+         }
          @media (min-width: 992px) {
             display: none;
          }
