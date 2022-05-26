@@ -5927,7 +5927,7 @@ body {
 @media (max-width: 991.98px) {
   .plug__ticker {
     position: absolute;
-    top: 775px;
+    top: 495px;
     left: 0;
     width: 100%;
     margin-bottom: unset;
@@ -5939,13 +5939,17 @@ body {
 }
 @media (max-width: 991.98px) and (max-height: 870px) {
   .plug__ticker {
-    top: 745px;
+    top: 435px;
   }
 }
-@media (max-width: 991.98px) and (max-height: 870px) {
+@media (max-width: 991.98px) and (max-height: 750px) {
   .plug__ticker {
-    top: unset;
-    bottom: 20px;
+    top: 395px;
+  }
+}
+@media (max-width: 991.98px) and (max-height: 700px) {
+  .plug__ticker {
+    top: 375px;
   }
 }
 @-webkit-keyframes drop {

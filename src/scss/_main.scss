@@ -1713,7 +1713,7 @@ body {
       font-style: italic;
       @media (max-width: 991.98px) {
          position: absolute;
-         top: 775px;
+         top: 495px;
          left: 0;
          width: 100%;
          margin-bottom: unset;
@@ -1722,11 +1722,13 @@ body {
             display: none;
          }
          @media (max-height: 870px) {
-            top: 745px;
+            top: 435px;
          }
-         @media (max-height: 870px) {
-            top: unset;
-            bottom: 20px;
+         @media (max-height: 750px) {
+            top: 395px;
+         }
+         @media (max-height: 700px) {
+            top: 375px;
          }
       }
       @keyframes drop {
