@@ -5835,15 +5835,26 @@ body {
   .plug__table-bg2-mobile {
     position: absolute;
     top: 0;
-    right: 0;
     height: 233px;
-    left: 53%;
     background: #beac83;
+    left: 23%;
+    right: 19%;
   }
 }
 @media (max-width: 991.98px) and (max-height: 750px) {
   .plug__table-bg2-mobile {
     left: 47%;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 767.98px) {
+  .plug__table-bg2-mobile {
+    left: 31%;
+    right: 0;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 450px) {
+  .plug__table-bg2-mobile {
+    left: 53%;
   }
 }
 .plug__logo {

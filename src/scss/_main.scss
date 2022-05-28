@@ -1640,13 +1640,19 @@ body {
          &-bg2-mobile {
             position: absolute;
             top: 0;
-            right: 0;
             height: 233px;
-            left: 53%;
-            // width: 180px;
             background: $bg;
+            left: 23%;
+            right: 19%;
             @media (max-height: 750px) {
                left: 47%;
+            }
+            @media (max-width: 767.98px) {
+               left: 31%;
+               right: 0;
+            }
+            @media (max-width: 450px) {
+               left: 53%;
             }
          }
       }
