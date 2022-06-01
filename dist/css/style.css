@@ -5445,15 +5445,15 @@ body {
 
 @-webkit-keyframes ticker {
   100% {
-    -webkit-transform: translateX(-428.725px);
-            transform: translateX(-428.725px);
+    -webkit-transform: translateX(-758.737px);
+            transform: translateX(-758.737px);
   }
 }
 
 @keyframes ticker {
   100% {
-    -webkit-transform: translateX(-428.725px);
-            transform: translateX(-428.725px);
+    -webkit-transform: translateX(-758.737px);
+            transform: translateX(-758.737px);
   }
 }
 .plug {
