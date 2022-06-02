@@ -1971,9 +1971,15 @@ body {
 }
 
 .plug-post-page {
+   .post__btn.active {
+      color: $pink;
+      &::before {
+         background: $pink;
+      }
+   }
    .header__logo {
       // margin-top: -73px;
-      margin-bottom: 32px;
+      margin-bottom: 31.6px;
    }
    .post__text-btn {
       margin-top: 10px;
@@ -1991,7 +1997,7 @@ body {
       color: $pink;
       transition: 0.2s ease;
    }
-   .logo__wrap,
+
    .header__logo {
       cursor: default;
    }

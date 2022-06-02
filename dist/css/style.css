@@ -6270,8 +6270,14 @@ body {
           transform: translateY(0vh);
 }
 
+.plug-post-page .post__btn.active {
+  color: #ef0a7c;
+}
+.plug-post-page .post__btn.active::before {
+  background: #ef0a7c;
+}
 .plug-post-page .header__logo {
-  margin-bottom: 32px;
+  margin-bottom: 31.6px;
 }
 .plug-post-page .post__text-btn {
   margin-top: 10px;
@@ -6293,7 +6299,6 @@ body {
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
 }
-.plug-post-page .logo__wrap,
 .plug-post-page .header__logo {
   cursor: default;
 }
