@@ -5456,6 +5456,15 @@ body {
             transform: translateX(-758.737px);
   }
 }
+.page-plug {
+  position: relative;
+  overflow: hidden;
+}
+@media (max-height: 650px) {
+  .page-plug {
+    height: 750px;
+  }
+}
 .plug {
   min-height: 100vh;
   overflow: hidden;
@@ -6270,6 +6279,14 @@ body {
           transform: translateY(0vh);
 }
 
+.plug__logo {
+  cursor: pointer;
+}
+
+.plug__table-wrap {
+  pointer-events: none;
+}
+
 .plug-post-page .post__btn.active {
   color: #ef0a7c;
 }
@@ -6283,6 +6300,7 @@ body {
   margin-top: unset;
 }
 .plug-post-page .header__logo {
+  margin-right: 3px;
   margin-bottom: 31.6px;
 }
 .plug-post-page .post__text-btn {

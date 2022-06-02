@@ -182,7 +182,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
          }, 200)
       }
-      // logoRotate()
       setInterval(logoRotate, 5000);
 
    }
