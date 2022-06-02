@@ -6269,7 +6269,60 @@ body {
       -ms-transform: translateY(0vh);
           transform: translateY(0vh);
 }
+
+.plug-post-page .header__logo {
+  margin-bottom: 32px;
+}
+.plug-post-page .post__text-btn {
+  margin-top: 10px;
+  font-family: Bellefair;
+  font-size: 21px;
+  line-height: 20px;
+  padding: 5px;
+  letter-spacing: -0.03em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 75px;
+}
+.plug-post-page .btn:hover {
+  border-color: #000;
+  background: #ef0a7c;
+  color: #ef0a7c;
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.plug-post-page .logo__wrap,
+.plug-post-page .header__logo {
+  cursor: default;
+}
+@media (max-height: 800px) {
+  .plug-post-page .post {
+    padding-bottom: 70px;
+  }
+  .plug-post-page .post__main {
+    height: calc(100% + 70px);
+  }
+  .plug-post-page .aside-btn__wrap {
+    top: unset;
+    bottom: 80px;
+  }
+}
+@media (max-height: 600px) {
+  .plug-post-page .pt-wrapper {
+    height: 800px;
+  }
+}
+
+.plug-post-page-active-link .post__text::after {
+  bottom: -52px;
+}
+
 .webp .home__main-image-wrap { background: url(../img/image.webp) left center/100% auto repeat-y; }
+
 .webp .no-webp .home__main-image-wrap { background: url(../img/image.webp) left center/100% auto repeat-y !important; }
+
 .webp .no-webp .plug__main-image-wrap { background: url(../img/image.webp) left center/100% auto repeat-y !important; }
+
 .webp .plug__main-image-wrap { background: url(../img/image.webp) left center/100% auto repeat-y; }

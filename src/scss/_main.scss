@@ -1969,3 +1969,52 @@ body {
       transform: translateY(0vh);
    }
 }
+
+.plug-post-page {
+   .header__logo {
+      // margin-top: -73px;
+      margin-bottom: 32px;
+   }
+   .post__text-btn {
+      margin-top: 10px;
+      font-family: Bellefair;
+      font-size: 21px;
+      line-height: 20px;
+      padding: 5px;
+      letter-spacing: -0.03em;
+      width: fit-content;
+      margin-left: 75px;
+   }
+   .btn:hover {
+      border-color: #000;
+      background: $pink;
+      color: $pink;
+      transition: 0.2s ease;
+   }
+   .logo__wrap,
+   .header__logo {
+      cursor: default;
+   }
+   @media (max-height: 800px) {
+      .post {
+         padding-bottom: 70px;
+      }
+      .post__main {
+         height: calc(100% + 70px);
+      }
+      .aside-btn__wrap {
+         top: unset;
+         bottom: 80px;
+      }
+   }
+   @media (max-height: 600px) {
+      .pt-wrapper {
+         height: 800px;
+      }
+   }
+}
+.plug-post-page-active-link {
+   .post__text::after {
+      bottom: -52px;
+   }
+}

@@ -161,7 +161,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
          }, 4000)
       }, 4200)
+   }
+   if ($('body').hasClass('plug-post-page')) {
+      document.addEventListener('mousemove', (e) => {
+         const logos = document.querySelectorAll('.logo')
+         let x = e.pageX / 150
+         let matX = x.toFixed(1)
+         let y = e.pageY / 150
+         let matY = y.toFixed(1)
+         logos.forEach(element => {
+            element.style.transform = `translate(${matX + 'px'}, ${matY + 'px'})`;
+         });
 
+      });
+
+      function logoRotate() {
+         document.querySelector('.logo__wrap').classList.remove('animate');
+         setTimeout(function () {
+            document.querySelector('.logo__wrap').classList.add('animate');
+
+         }, 200)
+      }
+      // logoRotate()
+      setInterval(logoRotate, 5000);
 
    }
 
