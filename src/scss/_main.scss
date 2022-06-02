@@ -1977,8 +1977,13 @@ body {
          background: $pink;
       }
    }
+   .header {
+      position: absolute;
+      bottom: 100%;
+      right: 0;
+      margin-top: unset;
+   }
    .header__logo {
-      // margin-top: -73px;
       margin-bottom: 31.6px;
    }
    .post__text-btn {
@@ -1998,7 +2003,7 @@ body {
       transition: 0.2s ease;
    }
 
-   .header__logo {
+   .logo__wrap {
       cursor: default;
    }
    @media (max-height: 800px) {
