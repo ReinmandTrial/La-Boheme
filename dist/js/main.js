@@ -156,16 +156,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
          }, 4000)
       }, 4200)
-      // document.addEventListener('mousemove', (e) => {
-      //    const plugMainLogo = document.querySelector('.plug__logo')
-      //    let x = e.pageX / 150
-      //    let matX = x.toFixed(1)
-      //    let y = e.pageY / 150
-      //    let matY = y.toFixed(1)
-      //    plugMainLogo.style.transform = `translate(${matX + 'px'}, ${matY + 'px'})`;
-
-
-      // });
+      document.addEventListener('mousemove', (e) => {
+         const plugMainLogo = document.querySelector('.plug__logo')
+         let x = e.pageX / 150
+         let matX = x.toFixed(1)
+         let y = e.pageY / 150
+         let matY = y.toFixed(1)
+         plugMainLogo.style.transform = `translate(${matX + 'px'}, ${matY + 'px'})`;
+      });
       // document.addEventListener('mousemove', (e) => {
       //    const logos = document.querySelectorAll('.logo')
       //    let x = e.pageX / 150
