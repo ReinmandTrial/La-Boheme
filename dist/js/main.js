@@ -162,29 +162,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
          }, 4000)
       }, 4200)
-      document.addEventListener('mousemove', (e) => {
-         const plugMainLogo = document.querySelector('.plug__logo')
-         let x = e.pageX / 150
-         let matX = x.toFixed(1)
-         let y = e.pageY / 150
-         let matY = y.toFixed(1)
-         plugMainLogo.style.transform = `translate(${matX + 'px'}, ${matY + 'px'})`;
+      // document.addEventListener('mousemove', (e) => {
+      //    const plugMainLogo = document.querySelector('.plug__logo')
+      //    let x = e.pageX / 150
+      //    let matX = x.toFixed(1)
+      //    let y = e.pageY / 150
+      //    let matY = y.toFixed(1)
+      //    plugMainLogo.style.transform = `translate(${matX + 'px'}, ${matY + 'px'})`;
 
 
-      });
+      // });
    }
    if ($('body').hasClass('plug-post-page')) {
-      document.addEventListener('mousemove', (e) => {
-         const logos = document.querySelectorAll('.logo')
-         let x = e.pageX / 150
-         let matX = x.toFixed(1)
-         let y = e.pageY / 150
-         let matY = y.toFixed(1)
-         logos.forEach(element => {
-            element.style.transform = `translate(${matX + 'px'}, ${matY + 'px'})`;
-         });
+      // document.addEventListener('mousemove', (e) => {
+      //    const logos = document.querySelectorAll('.logo')
+      //    let x = e.pageX / 150
+      //    let matX = x.toFixed(1)
+      //    let y = e.pageY / 150
+      //    let matY = y.toFixed(1)
+      //    logos.forEach(element => {
+      //       element.style.transform = `translate(${matX + 'px'}, ${matY + 'px'})`;
+      //    });
 
-      });
+      // });
 
       function logoRotate() {
          const plugLogos = document.querySelectorAll('.logo__wrap')
@@ -195,7 +195,10 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 200)
          });
       }
-      setInterval(logoRotate, 5000);
+      setInterval(() => {
+         setInterval(logoRotate, 5000)
+      }
+         , 10000)
 
    }
 
