@@ -73,13 +73,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
       function logoRotate() {
-         document.querySelector('.logo__wrap').classList.remove('animate');
-         setTimeout(function () {
-            document.querySelector('.logo__wrap').classList.add('animate');
-
-         }, 200)
+         const mainLogos = document.querySelectorAll('.logo__wrap')
+         mainLogos.forEach(el => {
+            el.classList.remove('animate');
+            setTimeout(function () {
+               el.classList.add('animate');
+            }, 200)
+         });
       }
-      // logoRotate()
       setInterval(logoRotate, 5000);
 
 
@@ -161,6 +162,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
          }, 4000)
       }, 4200)
+      document.addEventListener('mousemove', (e) => {
+         const plugMainLogo = document.querySelector('.plug__logo')
+         let x = e.pageX / 150
+         let matX = x.toFixed(1)
+         let y = e.pageY / 150
+         let matY = y.toFixed(1)
+         plugMainLogo.style.transform = `translate(${matX + 'px'}, ${matY + 'px'})`;
+
+
+      });
    }
    if ($('body').hasClass('plug-post-page')) {
       document.addEventListener('mousemove', (e) => {
@@ -176,11 +187,13 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
       function logoRotate() {
-         document.querySelector('.logo__wrap').classList.remove('animate');
-         setTimeout(function () {
-            document.querySelector('.logo__wrap').classList.add('animate');
-
-         }, 200)
+         const plugLogos = document.querySelectorAll('.logo__wrap')
+         plugLogos.forEach(el => {
+            el.classList.remove('animate');
+            setTimeout(function () {
+               el.classList.add('animate');
+            }, 200)
+         });
       }
       setInterval(logoRotate, 5000);
 

@@ -838,8 +838,8 @@
    &__text {
       font-size: 14px;
       line-height: 1.43;
-      padding: 52px 19px 20px 18px;
-      margin-left: 50px;
+      padding: 52px 19px 20px 12px;
+      margin-left: 43px;
       border-bottom: 2px solid #000;
       position: relative;
       &::after {
@@ -925,6 +925,7 @@
    }
 }
 .aside-btn {
+   display: block;
    padding: 2px 7px;
    font-size: 14px;
    &__wrap {
@@ -1994,7 +1995,7 @@ body {
       margin-top: unset;
    }
    .header__logo {
-      margin-right: 3px;
+      cursor: default;
       margin-bottom: 31.6px;
    }
    .post__text-btn {
@@ -2015,7 +2016,7 @@ body {
    }
 
    .logo__wrap {
-      cursor: default;
+      // cursor: default;
    }
    @media (max-height: 800px) {
       .post {

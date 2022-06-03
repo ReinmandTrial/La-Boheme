@@ -4857,8 +4857,8 @@ textarea {
 .post__text {
   font-size: 14px;
   line-height: 1.43;
-  padding: 52px 19px 20px 18px;
-  margin-left: 50px;
+  padding: 52px 19px 20px 12px;
+  margin-left: 43px;
   border-bottom: 2px solid #000;
   position: relative;
 }
@@ -4994,6 +4994,7 @@ textarea {
 }
 
 .aside-btn {
+  display: block;
   padding: 2px 7px;
   font-size: 14px;
 }
@@ -6300,7 +6301,7 @@ body {
   margin-top: unset;
 }
 .plug-post-page .header__logo {
-  margin-right: 3px;
+  cursor: default;
   margin-bottom: 31.6px;
 }
 .plug-post-page .post__text-btn {
@@ -6322,9 +6323,6 @@ body {
   -webkit-transition: 0.2s ease;
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
-}
-.plug-post-page .logo__wrap {
-  cursor: default;
 }
 @media (max-height: 800px) {
   .plug-post-page .post {
