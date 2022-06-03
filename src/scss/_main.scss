@@ -838,7 +838,7 @@
    &__text {
       font-size: 14px;
       line-height: 1.43;
-      padding: 52px 19px 20px 12px;
+      padding: 52px 19px 20px 13px;
       margin-left: 43px;
       border-bottom: 2px solid #000;
       position: relative;
@@ -991,6 +991,9 @@
          letter-spacing: 0.09em;
          transition: 1.5s ease-out;
          transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+         &:last-child {
+            font-size: 38px;
+         }
       }
    }
    &.aos-animate {
@@ -1995,6 +1998,7 @@ body {
       margin-top: unset;
    }
    .header__logo {
+      margin-right: 2px;
       cursor: default;
       margin-bottom: 31.6px;
    }

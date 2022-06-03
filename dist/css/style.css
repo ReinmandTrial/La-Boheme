@@ -4857,7 +4857,7 @@ textarea {
 .post__text {
   font-size: 14px;
   line-height: 1.43;
-  padding: 52px 19px 20px 12px;
+  padding: 52px 19px 20px 13px;
   margin-left: 43px;
   border-bottom: 2px solid #000;
   position: relative;
@@ -5097,6 +5097,9 @@ textarea {
   -webkit-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
        -o-transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
           transition-timing-function: cubic-bezier(0.37, 0.58, 0.55, 0.99) !important;
+}
+[data-aos=logoLH].header__logo .tahoma:last-child {
+  font-size: 38px;
 }
 [data-aos=logoLH].aos-animate {
   word-spacing: -12px;
@@ -6301,6 +6304,7 @@ body {
   margin-top: unset;
 }
 .plug-post-page .header__logo {
+  margin-right: 2px;
   cursor: default;
   margin-bottom: 31.6px;
 }
