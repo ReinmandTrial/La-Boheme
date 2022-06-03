@@ -66,12 +66,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
 
-
-
-
-
-
-
       function logoRotate() {
          const mainLogos = document.querySelectorAll('.logo__wrap')
          mainLogos.forEach(el => {
@@ -172,8 +166,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
       // });
-   }
-   if ($('body').hasClass('plug-post-page')) {
       // document.addEventListener('mousemove', (e) => {
       //    const logos = document.querySelectorAll('.logo')
       //    let x = e.pageX / 150
@@ -199,7 +191,6 @@ document.addEventListener('DOMContentLoaded', function () {
          setInterval(logoRotate, 5000)
       }
          , 10000)
-
    }
 
 
