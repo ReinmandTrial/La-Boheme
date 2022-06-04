@@ -120,6 +120,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
       });
    }
+   if ($('body').hasClass('page-plug') && window.innerWidth < 992) {
+      $('.plug__table-wrap').attr('data-aos-offset', '-500')
+      $('.plug__table-bg').attr('data-aos-offset', '-500')
+   }
 
    AOS.init({
       // once: false,
@@ -187,8 +191,10 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       setInterval(() => {
          setInterval(logoRotate, 5000)
-      }
-         , 10000)
+      }, 10000)
+
+
+
    }
 
 

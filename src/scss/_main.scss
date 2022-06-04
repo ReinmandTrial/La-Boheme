@@ -1305,6 +1305,9 @@ body {
 .pt-wrapper {
    height: 100vh;
    overflow: hidden;
+   @media (max-width: 991.98px) {
+      overflow: visible;
+   }
 }
 .pt-page:not(.pt-page-current) {
    top: 150%;
@@ -1345,6 +1348,9 @@ body {
 .plug {
    min-height: 100vh;
    overflow: hidden;
+   @media (max-width: 991.98px) {
+      overflow: visible;
+   }
    @media (max-height: 650px) {
       height: 750px;
    }
@@ -1662,12 +1668,12 @@ body {
             @media (max-height: 750px) {
                left: 47%;
             }
+            @media (max-width: 450px) {
+               left: 53%;
+            }
             @media (max-width: 767.98px) {
                left: 31%;
                right: 0;
-            }
-            @media (max-width: 450px) {
-               left: 53%;
             }
          }
       }
@@ -1844,7 +1850,7 @@ body {
       &.--mobile {
          @media (max-width: 991.98px) {
             transition-property: transform;
-            transform: translateY(-50vh);
+            transform: translateY(-100vh);
             animation: drop 0.7s ease 1.7s forwards;
          }
          @media (min-width: 992px) {
