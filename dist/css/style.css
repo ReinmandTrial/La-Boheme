@@ -6395,6 +6395,108 @@ body {
     height: 800px;
   }
 }
+.plug-post-page .post__logo-mobile {
+  margin-bottom: 47px;
+}
+@media (min-width: 992px) {
+  .plug-post-page .post__logo-mobile {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .plug-post-page .page__sidebar,
+.plug-post-page .page__content::before,
+.plug-post-page .post__text::after,
+.plug-post-page .image-large__step,
+.plug-post-page .post__slider::after {
+    display: none;
+  }
+  .plug-post-page .container {
+    padding: 0 28px;
+  }
+  .plug-post-page .post__content {
+    max-height: unset;
+  }
+  .plug-post-page .post__main {
+    overflow-y: visible;
+  }
+  .plug-post-page .post__text {
+    border-bottom: none;
+    padding-left: 10px;
+    padding-top: 89px;
+    margin-left: unset;
+    padding-right: unset;
+  }
+  @-webkit-keyframes btnDown {
+    from {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+  }
+  @keyframes btnDown {
+    from {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+  }
+  .plug-post-page .post__slider {
+    z-index: 30;
+  }
+  .plug-post-page .post__aside-btn {
+    position: relative;
+    z-index: 20;
+    top: unset;
+    left: unset;
+    bottom: unset;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    margin-left: auto;
+    margin-right: 39px;
+    height: 39px;
+    margin-bottom: -39px;
+    padding: 19px 12px;
+    -webkit-animation: btnDown 1s ease 0.3s;
+            animation: btnDown 1s ease 0.3s;
+  }
+  .plug-post-page .post__aside-btn .aside-btn {
+    padding: unset;
+  }
+  .plug-post-page .post__aside-btn .aside-btn::before {
+    height: 39px;
+    width: 100%;
+  }
+  .plug-post-page .post {
+    padding-top: 32px;
+  }
+  .plug-post-page .header {
+    display: none;
+    position: static;
+  }
+  .plug-post-page .post__text-btn {
+    margin-left: 20px;
+  }
+  .plug-post-page .post {
+    padding-bottom: unset;
+  }
+  .plug-post-page .post__buttons {
+    padding: 119px 20px 40px 64px;
+  }
+}
+@media (max-width: 400px) {
+  .plug-post-page .container {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 575.98px) {
+  .plug-post-page .post__text {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+}
 
 .plug-post-page-active-link .post__text::after {
   bottom: -52px;

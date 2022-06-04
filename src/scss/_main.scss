@@ -1607,6 +1607,9 @@ body {
    &__table-wrap {
       position: relative;
       z-index: 10;
+      @media (max-width: 991.98px) {
+         // z-index: 50;
+      }
    }
    &__table {
       margin-bottom: 135px;
@@ -1624,6 +1627,9 @@ body {
          height: 100%;
          background: $bg;
          z-index: -5;
+         @media (max-width: 991.98px) {
+            // z-index: ;
+         }
       }
       @media (min-width: 992px) and (max-height: 700px) {
          margin-bottom: 100px;
@@ -2062,6 +2068,94 @@ body {
    @media (max-height: 600px) {
       .pt-wrapper {
          height: 800px;
+      }
+   }
+   .post__logo-mobile {
+      margin-bottom: 47px;
+      @media (min-width: 992px) {
+         display: none;
+      }
+   }
+   @media (max-width: 991.98px) {
+      .page__sidebar,
+      .page__content::before,
+      .post__text::after,
+      .image-large__step,
+      .post__slider::after {
+         display: none;
+      }
+      .container {
+         padding: 0 28px;
+      }
+      .post__content {
+         max-height: unset;
+      }
+      .post__main {
+         overflow-y: visible;
+      }
+      .post__text {
+         border-bottom: none;
+         padding-left: 10px;
+         padding-top: 89px;
+         margin-left: unset;
+         padding-right: unset;
+      }
+      @keyframes btnDown {
+         from {
+            transform: translateY(-100%);
+         }
+      }
+      .post__slider {
+         z-index: 30;
+      }
+      .post__aside-btn {
+         position: relative;
+         z-index: 20;
+         top: unset;
+         left: unset;
+         bottom: unset;
+         width: fit-content;
+         transform: none;
+         margin-left: auto;
+         margin-right: 39px;
+         height: 39px;
+         margin-bottom: -39px;
+         padding: 19px 12px;
+         animation: btnDown 1s ease 0.3s;
+         .aside-btn {
+            padding: unset;
+            &::before {
+               height: 39px;
+               width: 100%;
+            }
+         }
+      }
+      .post {
+         padding-top: 32px;
+      }
+      .header {
+         display: none;
+         position: static;
+      }
+      .post__text-btn {
+         margin-left: 20px;
+      }
+      .post {
+         padding-bottom: unset;
+      }
+      .post__buttons {
+         padding: 119px 20px 40px 64px;
+      }
+   }
+   @media (max-width: 400px) {
+      .container {
+         padding: 0 10px;
+      }
+   }
+   .post__text {
+      @media (max-width: 575.98px) {
+         font-size: 14px;
+         line-height: 1.43;
       }
    }
 }
