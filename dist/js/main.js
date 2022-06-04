@@ -129,11 +129,8 @@ document.addEventListener('DOMContentLoaded', function () {
       // once: false,
    });
    if ($('body').hasClass('page-plug')) {
-      $('.plug__btn-to-more').on('click', function (e) {
-         if (window.innerWidth >= 992) {
-            e.preventDefault()
-         }
-      })
+
+
 
       $('.plug__btn-to-more').on('mouseover', function () {
          $(this).find('source').attr('srcset', 'img/svg-icons/Button_Rollover.svg')
