@@ -2071,6 +2071,7 @@ body {
       }
    }
    .post__logo-mobile {
+      display: block;
       margin-bottom: 47px;
       @media (min-width: 992px) {
          display: none;

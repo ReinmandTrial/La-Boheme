@@ -6393,6 +6393,7 @@ body {
   }
 }
 .plug-post-page .post__logo-mobile {
+  display: block;
   margin-bottom: 47px;
 }
 @media (min-width: 992px) {
