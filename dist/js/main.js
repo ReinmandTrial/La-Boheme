@@ -129,6 +129,15 @@ document.addEventListener('DOMContentLoaded', function () {
       // once: false,
    });
    if ($('body').hasClass('page-plug')) {
+      $('.plug__btn-to-more').on('mouseover', function () {
+         $(this).find('source').attr('srcset', 'img/svg-icons/Button_Rollover.svg')
+         $(this).find('img').attr('src', 'img/svg-icons/Button_Rollover.svg')
+      })
+      $('.plug__btn-to-more').on('mouseleave', function () {
+         $(this).find('source').attr('srcset', 'img/svg-icons/Button_Idle.svg')
+         $(this).find('img').attr('src', 'img/svg-icons/Button_Idle.svg')
+      })
+
       setTimeout(function () {
          const plugCards = new Swiper('.plug__slider', {
             simulateTouch: false,

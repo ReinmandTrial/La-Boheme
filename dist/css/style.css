@@ -6053,7 +6053,38 @@ body {
   width: fit-content;
   white-space: nowrap;
 }
+.plug__btn-to-more {
+  display: block;
+  pointer-events: visible;
+  width: 45px;
+  height: 45px;
+  margin-top: -60px;
+  margin-bottom: 15px;
+  margin-left: 163px;
+}
+@media (max-width: 991.98px) {
+  .plug__btn-to-more {
+    position: absolute;
+    margin: 0;
+    top: -30px;
+    right: 5px;
+    z-index: 10;
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 359px) {
+  .plug__btn-to-more {
+    top: -20px;
+  }
+}
+.plug__btn-to-more img {
+  width: 100%;
+  height: 100%;
+}
 .plug__text-logo {
+  pointer-events: visible;
+  cursor: pointer;
   position: relative;
   z-index: 10;
   margin-right: 30px;
@@ -6362,7 +6393,7 @@ body {
 }
 .plug-post-page .header__logo {
   margin-right: 2px;
-  cursor: default;
+  cursor: pointer;
   margin-bottom: 31.6px;
 }
 .plug-post-page .post__text-btn {
