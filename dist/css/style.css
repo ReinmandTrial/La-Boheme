@@ -6263,11 +6263,11 @@ body {
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: -webkit-transform 0.7s ease 0.6s;
-  transition: -webkit-transform 0.7s ease 0.6s;
-  -o-transition: transform 0.7s ease 0.6s;
-  transition: transform 0.7s ease 0.6s;
-  transition: transform 0.7s ease 0.6s, -webkit-transform 0.7s ease 0.6s;
+  -webkit-transition: -webkit-transform 0.7s ease 0.8s;
+  transition: -webkit-transform 0.7s ease 0.8s;
+  -o-transition: transform 0.7s ease 0.8s;
+  transition: transform 0.7s ease 0.8s;
+  transition: transform 0.7s ease 0.8s, -webkit-transform 0.7s ease 0.8s;
 }
 .plug__slide.swiper-slide-active .plug-card__sponsor-mobile,
 .plug__slide.swiper-slide-active .plug-card__btn {
