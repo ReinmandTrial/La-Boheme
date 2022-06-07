@@ -1543,7 +1543,7 @@ body {
 
       &-wrap {
          filter: brightness(0.9) grayscale(1) sepia(0.2) saturate(0);
-         // animation: bgY 180s linear 1.5s infinite;
+         animation: bgY 180s linear 1.5s infinite;
          background: url("../img/image.jpg") left center / 100% auto repeat-y;
          width: 100%;
          height: 100%;
