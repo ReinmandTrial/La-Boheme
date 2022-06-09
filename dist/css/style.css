@@ -5548,6 +5548,12 @@ body {
   margin: 120px 0 170px;
   border-right: 2px solid #000;
 }
+@media (min-width: 992px) and (min-height: 1100px) {
+  .plug__leftside {
+    margin: 120px 0 170px;
+    padding-bottom: calc(50vh - 400px - 170px);
+  }
+}
 @media (max-height: 900px) {
   .plug__leftside {
     margin: 70px 0 100px;
@@ -5695,6 +5701,11 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+@media (min-width: 992px) and (min-height: 1100px) {
+  .plug__rightside {
+    padding: 120px 0 calc(50vh - 400px);
+  }
+}
 @media (max-height: 900px) {
   .plug__rightside {
     padding: 70px 0 100px;
@@ -5724,6 +5735,9 @@ body {
     width: 2px;
     background: #000;
   }
+}
+.plug [data-aos=barcode] {
+  padding-left: 0;
 }
 .plug__main-image {
   width: 100%;
@@ -5809,7 +5823,7 @@ body {
 }
 .plug__table-wrap {
   position: relative;
-  z-index: 10;
+  z-index: 20;
 }
 .plug__table {
   margin-bottom: 135px;
@@ -5819,12 +5833,9 @@ body {
   height: 412px;
 }
 .plug__table-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
   background: #beac83;
+  position: relative;
   z-index: -5;
 }
 @media (min-width: 992px) and (max-height: 700px) {
@@ -6361,44 +6372,37 @@ body {
 }
 
 [data-aos=table] {
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  -o-transition-property: transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  -webkit-transition-property: margin;
+  -o-transition-property: margin;
+  transition-property: margin;
 }
 @media (min-height: 1100px) {
   [data-aos=table] {
-    -webkit-transform: translateY(-100vh);
-        -ms-transform: translateY(-100vh);
-            transform: translateY(-100vh);
+    margin-top: -100vh;
+    margin-bottom: 100vh;
   }
 }
 @media (max-height: 1100px) {
   [data-aos=table] {
-    -webkit-transform: translateY(-1100px);
-        -ms-transform: translateY(-1100px);
-            transform: translateY(-1100px);
+    margin-top: -1100px;
+    margin-bottom: 1100px;
   }
 }
 @media (max-height: 800px) {
   [data-aos=table] {
-    -webkit-transform: translateY(-800px);
-        -ms-transform: translateY(-800px);
-            transform: translateY(-800px);
+    margin-top: -800px;
+    margin-bottom: 800px;
   }
 }
 @media (max-height: 600px) {
   [data-aos=table] {
-    -webkit-transform: translateY(-600px);
-        -ms-transform: translateY(-600px);
-            transform: translateY(-600px);
+    margin-top: -600px;
+    margin-bottom: 600px;
   }
 }
 [data-aos=table].aos-animate {
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .plug__logo {

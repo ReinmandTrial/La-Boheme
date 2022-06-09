@@ -141,6 +141,10 @@ document.addEventListener('DOMContentLoaded', function () {
          $(this).find('img').attr('src', 'img/svg-icons/Button_Idle.svg')
       })
 
+      const tableHeight = $('.plug__table-wrap').height()
+      $('.plug__table-bg').css('margin-bottom', (tableHeight + 12) * -1)
+      $('.plug__table-bg').height(tableHeight + 12)
+
       setTimeout(function () {
          const plugCards = new Swiper('.plug__slider', {
             simulateTouch: false,
