@@ -1,3 +1,5 @@
+
+
 function testWebP(callback) {
 
    var webP = new Image();
@@ -13,6 +15,7 @@ testWebP(function (support) {
       document.querySelector('body').classList.add('no-webp');
    }
 });
+
 
 // const imagesLargeFade = document.querySelectorAll('.image-large')
 // imagesLargeFade.forEach(imageLargeFade => {
@@ -210,6 +213,11 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 10000)
 
 
+      gsap.from(".plug__table-container", {
+         y: window.innerHeight * -1,
+         duration: 3,
+         delay: 2
+      });
 
    }
 

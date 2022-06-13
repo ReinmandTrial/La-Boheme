@@ -31,6 +31,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "browser-sync": "^2.27.7",
+    "gsap": "^3.10.4",
     "swiper": "^8.1.4"
   }
 }
