@@ -43,6 +43,7 @@ var PageTransitions = (function () {
          setTimeout(function () {
             AOS.refreshHard()
          }, 650)
+
       });
    }
 

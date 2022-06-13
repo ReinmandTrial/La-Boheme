@@ -133,8 +133,6 @@ document.addEventListener('DOMContentLoaded', function () {
    });
    if ($('body').hasClass('page-plug')) {
 
-
-
       $('.plug__btn-to-more').on('mouseover', function () {
          $(this).find('source').attr('srcset', 'img/svg-icons/Button_Rollover.svg')
          $(this).find('img').attr('src', 'img/svg-icons/Button_Rollover.svg')
@@ -144,9 +142,9 @@ document.addEventListener('DOMContentLoaded', function () {
          $(this).find('img').attr('src', 'img/svg-icons/Button_Idle.svg')
       })
 
-      const tableHeight = $('.plug__table-wrap').height()
-      $('.plug__table-bg').css('margin-bottom', (tableHeight + 12) * -1)
-      $('.plug__table-bg').height(tableHeight + 12)
+      // const tableHeight = $('.plug__table-wrap').height()
+      // $('.plug__table-bg').css('margin-bottom', (tableHeight + 12) * -1)
+      // $('.plug__table-bg').height(tableHeight + 12)
 
       setTimeout(function () {
          const plugCards = new Swiper('.plug__slider', {
@@ -213,12 +211,41 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 10000)
 
 
-      gsap.from(".plug__table-container", {
+      let tableMove = gsap.from(".plug__table-wrap", {
          y: window.innerHeight * -1,
+         // x: -550,
+         ease: "power2.out",
          duration: 3,
          delay: 2
       });
+      let tableBgMove = gsap.from(".plug__table-bg", {
+         y: window.innerHeight * -1,
+         ease: "power2.out",
+         duration: 3,
+         delay: 2
+      });
+      let barcodeMove = gsap.from(".plug__main-image-wrap", {
+         ease: CustomEase.create("custom", "M0,0 C0.382,0.896 0.426,0.986 0.562,1.03 0.664,1.063 0.76,1.092 1,1 "),       // x: -550,
+         width: 0,
+         // x: -700,
+         duration: 1,
+         delay: 0.6
+      });
+      $('.pt-trigger').on('click', function () {
+         if (!$(this).hasClass('plug__logo') && !$(this).hasClass('plug__text-logo') && !$(this).hasClass('plug__btn-to-more')) {
+            setTimeout(() => {
 
+               if ($('.pt-page-1').hasClass('pt-page-current')) {
+                  console.log('restart');
+
+                  tableMove.restart(true, false)
+                  // $('.plug__main-image').width(0)
+                  tableBgMove.restart(true, false)
+                  barcodeMove.restart(true, false)
+               }
+            }, 100)
+         }
+      });
    }
 
 
