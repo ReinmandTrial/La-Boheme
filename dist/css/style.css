@@ -6578,6 +6578,68 @@ body {
   bottom: -52px;
 }
 
+.la-boheme__content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+.la-boheme__header {
+  position: absolute;
+  bottom: 100%;
+  right: -3px;
+  margin-left: 370px;
+}
+.la-boheme__header .search {
+  right: calc(100% + 70px);
+}
+.la-boheme__panorama {
+  height: 0;
+  padding-bottom: 50%;
+  width: 100%;
+  position: relative;
+  margin-bottom: 47px;
+}
+.la-boheme__panorama img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.la-boheme__panorama #panorama {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.la-boheme__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+.la-boheme__sponsors {
+  width: 346px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.la-boheme__text {
+  display: none;
+}
+
+.panolens-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
 .webp .home__main-image-wrap { background: url(../img/image.webp) left center/100% auto repeat-y; }
 
 .webp .no-webp .home__main-image-wrap { background: url(../img/image.webp) left center/100% auto repeat-y !important; }

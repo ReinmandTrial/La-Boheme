@@ -122,7 +122,39 @@ document.addEventListener('DOMContentLoaded', function () {
          el.style.height = contentHeight + 'px'
 
       });
+
+      // panorama
+
+
+      var infospot, infospot2, panorama, viewer;
+
+      infospot = new PANOLENS.Infospot();
+      infospot.position.set(5000.00, -665.23, -3996.49);
+      infospot.addHoverText('The Where Is Bar');
+
+      infospot2 = new PANOLENS.Infospot(300, PANOLENS.DataImage.Info);
+      infospot2.position.set(-5000.00, -1825.25, 197.56);
+      // infospot2.addHoverElement(document.getElementById('panorama'), 200);
+      // Get Google Map API Key - https://developers.google.com/maps/documentation/javascript/get-api-key
+
+      panorama = new PANOLENS.ImagePanorama('img/pan_08 (1).jpg');
+      panorama.add(infospot);
+      panorama.add(infospot2);
+      const htmlPanorama = document.getElementById('panorama')
+      viewer = new PANOLENS.Viewer({
+         container: htmlPanorama,
+         rotateSpeed: -0.2,
+         controlBar: false
+      });
+      viewer.add(panorama);
+
+
+      // panorama
+
+
    }
+
+
    if ($('body').hasClass('page-plug') && window.innerWidth < 992) {
       $('.plug__table-wrap').attr('data-aos-offset', '-500')
       $('.plug__table-bg').attr('data-aos-offset', '-500')
