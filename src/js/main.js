@@ -128,13 +128,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var infospot, infospot2, panorama, viewer;
 
-      infospot = new PANOLENS.Infospot();
-      infospot.position.set(5000.00, -665.23, -3996.49);
-      infospot.addHoverText('The Where Is Bar');
+      infospot = new PANOLENS.Infospot(300, 'img/panorama/icons/info.png');
+      infospot.position.set(4000.00, 600.00, 10.00);
+      infospot.addHoverText('Risto Kübar');
 
-      infospot2 = new PANOLENS.Infospot(300, PANOLENS.DataImage.Info);
-      infospot2.position.set(-5000.00, -1825.25, 197.56);
-      // infospot2.addHoverElement(document.getElementById('panorama'), 200);
+
+      infospot2 = new PANOLENS.Infospot(300, 'img/panorama/icons/plus.png');
+      infospot2.position.set(4000.00, -200.00, -1600.00);
+      infospot2.addHoverText('Konzertinfo');
+      // infospot2.addHoverElement(document.getElementById('infospot-info'), 200);
       // Get Google Map API Key - https://developers.google.com/maps/documentation/javascript/get-api-key
 
       panorama = new PANOLENS.ImagePanorama('img/pan_08 (1).jpg');

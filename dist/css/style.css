@@ -6594,19 +6594,20 @@ body {
 .la-boheme__header .search {
   right: calc(100% + 70px);
 }
+.la-boheme__scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-bottom: -136px;
+}
+.la-boheme__scroll::-webkit-scrollbar {
+  width: 0;
+}
 .la-boheme__panorama {
   height: 0;
   padding-bottom: 50%;
   width: 100%;
   position: relative;
   margin-bottom: 47px;
-}
-.la-boheme__panorama img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 .la-boheme__panorama #panorama {
   position: absolute;
@@ -6619,25 +6620,130 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+  position: relative;
+}
+.la-boheme__bottom::after {
+  content: "";
+  position: absolute;
+  z-index: 50;
+  top: -100px;
+  bottom: 0;
+  width: 2px;
+  right: 0;
+  background: #000;
 }
 .la-boheme__sponsors {
   width: 346px;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
+  position: relative;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.la-boheme__sponsors::before {
+  content: "";
+  position: absolute;
+  z-index: 50;
+  top: -100px;
+  bottom: 30px;
+  width: 2px;
+  left: 0;
+  background: #000;
+}
+.la-boheme__sponsors-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 17px;
+     -moz-column-gap: 17px;
+          column-gap: 17px;
+  padding-left: 36px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #000;
+}
+.la-boheme__sponsor {
+  display: block;
+}
+.la-boheme__sponsor--1 {
+  width: 69px;
+}
+.la-boheme__sponsor--2 {
+  width: 226px;
+}
+.la-boheme__sponsor--3 {
+  width: 128px;
+}
+.la-boheme__sponsors-bottom {
+  padding-left: 145px;
+  padding-top: 14px;
 }
 .la-boheme__text {
-  display: none;
+  font-family: "PT Serif Caption";
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 23px;
+  padding-left: 26px;
+  margin-bottom: 27px;
+  border-bottom: 2px solid #000;
+  min-height: 100px;
 }
 
-.panolens-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
+.infospot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 44px;
+     -moz-column-gap: 44px;
+          column-gap: 44px;
+  background: #a3a196;
+  display: none;
+}
+.infospot--info .infospot__image {
+  margin-top: 28px;
+}
+.infospot__leftside {
+  padding-left: 28px;
+}
+.infospot__image {
+  width: 303px;
+  height: 303px;
+}
+.infospot__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.infospot__rightside {
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.infospot__rightside::-webkit-scrollbar {
+  width: 0;
+}
+.infospot__text {
+  padding: 37px 33px 20px 0;
+  font-family: "PT Serif Caption";
+  font-size: 14px;
+  line-height: 20px;
+}
+.infospot__close {
+  position: absolute;
+  top: 13px;
+  right: 23px;
+  z-index: 5;
+}
+
+.panolens-infospot {
+  font-family: "Tahoma";
 }
 
 .webp .home__main-image-wrap { background: url(../img/image.webp) left center/100% auto repeat-y; }
