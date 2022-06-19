@@ -5454,15 +5454,15 @@ body {
 
 @-webkit-keyframes ticker {
   100% {
-    -webkit-transform: translateX(-758.737px);
-            transform: translateX(-758.737px);
+    -webkit-transform: translateX(-927.062px);
+            transform: translateX(-927.062px);
   }
 }
 
 @keyframes ticker {
   100% {
-    -webkit-transform: translateX(-758.737px);
-            transform: translateX(-758.737px);
+    -webkit-transform: translateX(-927.062px);
+            transform: translateX(-927.062px);
   }
 }
 .page-plug {
@@ -6023,9 +6023,9 @@ body {
     -webkit-animation: drop 0.7s ease 1.8s forwards;
             animation: drop 0.7s ease 1.8s forwards;
   }
-  .plug__ticker.--mobile img {
-    -webkit-animation: ticker 20s linear 2.5s infinite;
-            animation: ticker 20s linear 2.5s infinite;
+  .plug__ticker.--mobile span {
+    -webkit-animation: ticker 20s linear 1.8s infinite;
+            animation: ticker 20s linear 1.8s infinite;
   }
 }
 @media (max-width: 991.98px) and (min-height: 1100px) {

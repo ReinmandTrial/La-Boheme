@@ -1326,7 +1326,7 @@ body {
 
 @keyframes ticker {
    100% {
-      transform: translateX(-758.737px);
+      transform: translateX(-927.062px);
       // width: 12px;
    }
 }
@@ -1780,8 +1780,8 @@ body {
             transition-property: transform;
             animation: drop 0.7s ease 1.8s forwards;
             // transform: translateY(-100vh);
-            img {
-               animation: ticker 20s linear 2.5s infinite;
+            span {
+               animation: ticker 20s linear 1.8s infinite;
             }
             @media (min-height: 1100px) {
                transform: translateY(-100vh);
