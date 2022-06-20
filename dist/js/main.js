@@ -128,16 +128,47 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var infospot, infospot2, panorama, viewer;
 
+      const hotspotInfo2 = document.getElementById('infospot-info')
+      const hotspotPlus = document.getElementById('infospot-info')
+
       infospot = new PANOLENS.Infospot(300, 'img/panorama/icons/info.png');
       infospot.position.set(4000.00, 600.00, 10.00);
       infospot.addHoverText('Risto Kübar');
 
+      infospot.addEventListener('click', function () {
+         hotspotPlus.style.display = 'flex'
+         if ($(window).width() <= 992) {
+            $('.la-boheme__bottom').css('display', 'none')
+         }
+      });
 
       infospot2 = new PANOLENS.Infospot(300, 'img/panorama/icons/plus.png');
       infospot2.position.set(4000.00, -200.00, -1600.00);
       infospot2.addHoverText('Konzertinfo');
-      // infospot2.addHoverElement(document.getElementById('infospot-info'), 200);
-      // Get Google Map API Key - https://developers.google.com/maps/documentation/javascript/get-api-key
+
+      infospot2.addEventListener('click', function () {
+         hotspotInfo2.style.display = 'flex'
+         if ($(window).width() <= 992) {
+            $('.la-boheme__bottom').css('display', 'none')
+         }
+      });
+
+
+      $('.infospot__close').on('click', function () {
+         $(this).closest('.infospot').css('display', 'none')
+         if ($(window).width() <= 992) {
+            $('.la-boheme__bottom').css('display', 'flex')
+         }
+      })
+      if ($(window).width() <= 992) {
+         $(document).on('click', function (e) {
+            if (!e.target.closest('.infospot')) {
+               $('.infospot').hide()
+               $('.la-boheme__bottom').css('display', 'flex')
+
+            }
+         })
+      }
 
       panorama = new PANOLENS.ImagePanorama('img/pan_08 (1).jpg');
       panorama.add(infospot);
@@ -153,6 +184,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // panorama
 
+
+      // menu
+      if (window.innerWidth <= 992) {
+         panorama.addEventListener('ready', function () {
+            panorama.toggleInfospotVisibility(true, 0)
+
+            // infospot.onHover()
+            // infospot.onHoverStart()
+            // infospot.lockHoverElement()
+         })
+         infospot.setText('Risto Kübar')
+         infospot2.setText('Konzertinfo')
+         // infospot.lockHoverElement()
+         // infospot.unlockHoverElement()
+         // infospot2.lockHoverElement()
+         // 
+         $('.menu__btn').on('click', function () {
+            $('.menu__list').show()
+         })
+         $(document).on('click', function (e) {
+            if (!e.target.closest('.menu')) {
+               $('.menu__list').hide()
+            }
+         })
+      }
+      // menu
 
    }
 
