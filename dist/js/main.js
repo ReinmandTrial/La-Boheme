@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var infospot, infospot2, panorama, viewer;
 
       const hotspotInfo2 = document.getElementById('infospot-info')
-      const hotspotPlus = document.getElementById('infospot-info')
+      const hotspotPlus = document.getElementById('infospot-plus')
 
       infospot = new PANOLENS.Infospot(300, 'img/panorama/icons/info.png');
       infospot.position.set(4000.00, 600.00, 10.00);
@@ -170,36 +170,23 @@ document.addEventListener('DOMContentLoaded', function () {
          })
       }
 
+
+
+
       panorama = new PANOLENS.ImagePanorama('img/pan_08 (1).jpg');
-      panorama.add(infospot);
-      panorama.add(infospot2);
-      const htmlPanorama = document.getElementById('panorama')
-      viewer = new PANOLENS.Viewer({
-         container: htmlPanorama,
-         rotateSpeed: -0.2,
-         controlBar: false
-      });
-      viewer.add(panorama);
-
-
-      // panorama
-
 
       // menu
       if (window.innerWidth <= 992) {
          panorama.addEventListener('ready', function () {
-            panorama.toggleInfospotVisibility(true, 0)
+            console.log('ready');
 
             // infospot.onHover()
-            // infospot.onHoverStart()
-            // infospot.lockHoverElement()
+            // infospot.onHoverStart
+            infospot.lockHoverElement()
+            infospot2.lockHoverElement()
          })
-         infospot.setText('Risto Kübar')
-         infospot2.setText('Konzertinfo')
-         // infospot.lockHoverElement()
-         // infospot.unlockHoverElement()
-         // infospot2.lockHoverElement()
-         // 
+
+
          $('.menu__btn').on('click', function () {
             $('.menu__list').show()
          })
@@ -210,6 +197,34 @@ document.addEventListener('DOMContentLoaded', function () {
          })
       }
       // menu
+
+
+
+      panorama.add(infospot);
+      panorama.add(infospot2);
+
+
+
+      const htmlPanorama = document.getElementById('panorama')
+      viewer = new PANOLENS.Viewer({
+         container: htmlPanorama,
+         rotateSpeed: -0.2,
+         controlBar: false,
+         autoRotate: true,
+         autoRotateSpeed: 0.7,
+         autoRotateActivationDuration: 5000
+      });
+      viewer.add(panorama);
+
+      // infospot2.addEventListener('ready', function () {
+      //    console.log('ready');
+
+      //    infospot.onHoverStart()
+      // })
+      // panorama
+
+
+
 
    }
 

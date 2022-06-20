@@ -28,8 +28,8 @@
 }
 
 .pt-page-moveFromTop {
-	-webkit-animation: moveFromTop 0.6s ease both;
-	animation: moveFromTop 0.6s ease both;
+	-webkit-animation: pinkFromTop 0.6s ease both;
+	animation: pinkFromTop 0.6s ease both;
 }
 
 .pt-page-moveToBottom {
@@ -186,14 +186,8 @@
 	}
 }
 
-@-webkit-keyframes moveFromTop {
+@keyframes pinkFromTop {
 	from {
-		-webkit-transform: translateY(-100%);
-	}
-}
-@keyframes moveFromTop {
-	from {
-		-webkit-transform: translateY(-100%);
 		transform: translateY(-100%);
 	}
 }
