@@ -6916,7 +6916,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   background: #a3a196;
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+.infospot.active {
+  opacity: 1;
+  pointer-events: visible;
 }
 @media (max-width: 991.98px) {
   .infospot {

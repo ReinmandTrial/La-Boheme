@@ -136,7 +136,8 @@ document.addEventListener('DOMContentLoaded', function () {
       infospot.addHoverText('Risto Kübar');
 
       infospot.addEventListener('click', function () {
-         hotspotPlus.style.display = 'flex'
+         hotspotPlus.style.opacity = '1'
+         hotspotPlus.style.pointerEvents = 'visible'
          if ($(window).width() <= 992) {
             $('.la-boheme__bottom').css('display', 'none')
          }
@@ -147,7 +148,8 @@ document.addEventListener('DOMContentLoaded', function () {
       infospot2.addHoverText('Konzertinfo');
 
       infospot2.addEventListener('click', function () {
-         hotspotInfo2.style.display = 'flex'
+         hotspotInfo2.style.opacity = '1'
+         hotspotInfo2.style.pointerEvents = 'visible'
          if ($(window).width() <= 992) {
             $('.la-boheme__bottom').css('display', 'none')
          }
@@ -155,7 +157,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
       $('.infospot__close').on('click', function () {
-         $(this).closest('.infospot').css('display', 'none')
+         $(this).closest('.infospot').css('opacity', '0')
+         $(this).closest('.infospot').css('pointer-events', 'none')
          if ($(window).width() <= 992) {
             $('.la-boheme__bottom').css('display', 'flex')
          }

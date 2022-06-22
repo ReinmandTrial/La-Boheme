@@ -2528,7 +2528,14 @@ body {
    z-index: 20;
    display: flex;
    background: #a3a196;
-   display: none;
+   // display: none;
+   opacity: 0;
+   pointer-events: none;
+   transition: opacity 0.6s;
+   &.active {
+      opacity: 1;
+      pointer-events: visible;
+   }
    @media (max-width: 991.98px) {
       position: relative;
       height: auto;
