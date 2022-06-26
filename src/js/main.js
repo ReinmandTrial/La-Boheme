@@ -463,9 +463,9 @@ document.addEventListener('DOMContentLoaded', function () {
          autoHideInfospot: false,
          rotateSpeed: -0.2,
          controlBar: false,
-         // autoRotate: true,
-         // autoRotateSpeed: 0.7,
-         // autoRotateActivationDuration: 5000
+         autoRotate: true,
+         autoRotateSpeed: 0.7,
+         autoRotateActivationDuration: 5000
       });
       viewer.OrbitControls.minFov = 50;
       viewer.OrbitControls.maxFov = 60;
