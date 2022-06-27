@@ -133,7 +133,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
       var wall1hotspot1konzertinfo = new PANOLENS.Infospot(300, 'img/panorama/icons/info.png');
-      wall1hotspot1konzertinfo.position.set(4000.00, -350.00, 3000.00);
+      wall1hotspot1konzertinfo.position.set(3000.00, -300.00, -3800.00);
+
       wall1hotspot1konzertinfo.addHoverText('Konzertinfo');
 
       wall1hotspot1konzertinfo.addEventListener('click', function () {
@@ -200,7 +201,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
       var wall2hotspot1konzertinfo = new PANOLENS.Infospot(300, 'img/panorama/icons/info2.png');
-      wall2hotspot1konzertinfo.position.set(-3800.00, -300.00, 3000.00);
+      wall2hotspot1konzertinfo.position.set(4000.00, -350.00, 3000.00);
+
       wall2hotspot1konzertinfo.addHoverText('Konzertinfo');
 
       wall2hotspot1konzertinfo.addEventListener('click', function () {
@@ -241,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
       var wall3hotspot1konzertinfo = new PANOLENS.Infospot(300, 'img/panorama/icons/info3.png');
-      wall3hotspot1konzertinfo.position.set(-3800.00, -300.00, -2500.00);
+      wall3hotspot1konzertinfo.position.set(-3800.00, -300.00, 3000.00);
       wall3hotspot1konzertinfo.addHoverText('Konzertinfo');
 
       wall3hotspot1konzertinfo.addEventListener('click', function () {
@@ -281,7 +283,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
       var wall4hotspot1konzertinfo = new PANOLENS.Infospot(300, 'img/panorama/icons/info4.png');
-      wall4hotspot1konzertinfo.position.set(3000.00, -300.00, -3800.00);
+      wall4hotspot1konzertinfo.position.set(-3800.00, -300.00, -2500.00);
       wall4hotspot1konzertinfo.addHoverText('Konzertinfo');
 
       wall4hotspot1konzertinfo.addEventListener('click', function () {
@@ -470,7 +472,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
       viewer.OrbitControls.maxFov = 70;
       viewer.add(panorama);
-      viewer.OrbitControls.enableZoom = true
 
       viewer.OrbitControls.minPolarAngle = Math.PI / 2.2;
       viewer.OrbitControls.maxPolarAngle = Math.PI * 2 / 3.7;
