@@ -459,22 +459,26 @@ document.addEventListener('DOMContentLoaded', function () {
       const htmlPanorama = document.getElementById('panorama')
       viewer = new PANOLENS.Viewer({
          container: htmlPanorama,
-         horizontalView: true,
+         // horizontalView: true,
          autoHideInfospot: false,
          rotateSpeed: -0.2,
          controlBar: false,
          autoRotate: true,
          autoRotateSpeed: 0.7,
-         autoRotateActivationDuration: 5000
+         autoRotateActivationDuration: 500,
+         cameraFov: 70,
       });
-      viewer.OrbitControls.minFov = 50;
-      viewer.OrbitControls.maxFov = 60;
+      viewer.OrbitControls.maxFov = 70;
       viewer.add(panorama);
+      viewer.OrbitControls.enableZoom = true
 
-      // infospot2.addEventListener('ready', function () {
-      //    console.log('ready');
+      viewer.OrbitControls.minPolarAngle = Math.PI / 2.2;
+      viewer.OrbitControls.maxPolarAngle = Math.PI * 2 / 3.7;
+      // viewer.OrbitControls.addEventListener('change', function () {
+      //    // console.log('change');
+      //    console.log(panorama.getZoomLevel());
 
-      //    infospot.onHoverStart()
+
       // })
       // panorama
 
