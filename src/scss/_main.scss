@@ -2328,6 +2328,8 @@ body {
          }
       }
    }
+   .container {
+   }
    &__content {
       flex-direction: column;
       height: 100%;
@@ -2391,6 +2393,17 @@ body {
       margin-top: -3px;
       img {
          width: 100%;
+      }
+   }
+   &__arrow-back {
+      position: absolute;
+      right: -20px;
+      bottom: -28px;
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+      @media (max-width: 991.98px) {
+         display: none;
       }
    }
 
