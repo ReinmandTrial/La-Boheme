@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-   panorama = new PANOLENS.ImagePanorama('img/pan_11e.jpg');
+   panorama = new PANOLENS.ImagePanorama('img/panorama_final.jpg');
 
    // menu
    if (window.innerWidth <= 992) {
@@ -433,19 +433,19 @@ document.addEventListener('DOMContentLoaded', function () {
    // menu
 
    panorama.add(
-      wall1hotspot1konzertinfo,
-      wall1hotspot2programm,
+      // wall1hotspot1konzertinfo,
+      // wall1hotspot2programm,
       wall1hotspot3kuebar,
       wall1hotspot4guenter,
       wall1hotspot5trinkl,
-      wall2hotspot1konzertinfo,
-      wall2hotspot2programm,
+      // wall2hotspot1konzertinfo,
+      // wall2hotspot2programm,
       wall2hotspot3gabanyi,
-      wall3hotspot1konzertinfo,
-      wall3hotspot2programm,
+      // wall3hotspot1konzertinfo,
+      // wall3hotspot2programm,
       wall3hotspot3taran,
-      wall4hotspot1konzertinfo,
-      wall4hotspot2programm,
+      // wall4hotspot1konzertinfo,
+      // wall4hotspot2programm,
       wall4hotspot3schilde,
       wall4hotspot4oesterhelt,
       wall4hotspot5quellennachweise,
