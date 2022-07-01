@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
    var wall1hotspot5trinkl = new PANOLENS.Infospot(300, 'img/panorama/icons/plus4.png');
    wall1hotspot5trinkl.position.set(4000.00, 450.00, 2000.00);
-   wall1hotspot5trinkl.addHoverText('Sonya Trinkl');
+   wall1hotspot5trinkl.addHoverText('Sonia Trinkl');
 
    wall1hotspot5trinkl.addEventListener('click', function () {
       if ($(window).width() >= 992) {
