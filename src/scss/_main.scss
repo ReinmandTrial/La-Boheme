@@ -2442,6 +2442,7 @@ body {
          // padding-bottom: 40%;
       }
       @media (max-width: 991.98px) {
+         // overflow: hidden;
          margin-bottom: unset;
          margin: 0 -20px;
          width: calc(100% + 40px);
@@ -2544,9 +2545,14 @@ body {
    display: flex;
    background: #a3a196;
    // display: none;
-   opacity: 0;
-   pointer-events: none;
    transition: opacity 0.6s;
+   @media (min-width: 992px) {
+      opacity: 0;
+      pointer-events: none;
+   }
+   @media (max-width: 991.98px) {
+      display: none;
+   }
    &.active {
       opacity: 1;
       pointer-events: visible;
@@ -2728,5 +2734,13 @@ body {
       width: 50%;
       background: #ef0a7c;
       transition-property: transform;
+   }
+}
+.panolens-container {
+   display: none;
+}
+body.plug-post-page:not(.page-plug) {
+   @media (max-width: 991.98px) {
+      overflow: auto;
    }
 }

@@ -144,9 +144,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall1hotspot1konzertinfo.addHoverText('Konzertinfo');
 
    wall1hotspot1konzertinfo.addEventListener('click', function () {
-      document.getElementById('wall-1-hotspot-1-konzertinfo').style.opacity = '1'
-      document.getElementById('wall-1-hotspot-1-konzertinfo').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-1-hotspot-1-konzertinfo').style.opacity = '1'
+         document.getElementById('wall-1-hotspot-1-konzertinfo').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-1-hotspot-1-konzertinfo').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -157,9 +163,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall1hotspot2programm.addHoverText('Programm');
 
    wall1hotspot2programm.addEventListener('click', function () {
-      document.getElementById('wall-1-hotspot-2-programm').style.opacity = '1'
-      document.getElementById('wall-1-hotspot-2-programm').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-1-hotspot-2-programm').style.opacity = '1'
+         document.getElementById('wall-1-hotspot-2-programm').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-1-hotspot-2-programm').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -170,9 +182,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall1hotspot3kuebar.addHoverText('Risto Kübar');
 
    wall1hotspot3kuebar.addEventListener('click', function () {
-      document.getElementById('wall-1-hotspot-3-kuebar').style.opacity = '1'
-      document.getElementById('wall-1-hotspot-3-kuebar').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-1-hotspot-3-kuebar').style.opacity = '1'
+         document.getElementById('wall-1-hotspot-3-kuebar').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-1-hotspot-3-kuebar').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -183,9 +201,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall1hotspot4guenter.addHoverText('Matthias Günther');
 
    wall1hotspot4guenter.addEventListener('click', function () {
-      document.getElementById('wall-1-hotspot-4-guenter').style.opacity = '1'
-      document.getElementById('wall-1-hotspot-4-guenter').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-1-hotspot-4-guenter').style.opacity = '1'
+         document.getElementById('wall-1-hotspot-4-guenter').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-1-hotspot-4-guenter').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -196,9 +220,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall1hotspot5trinkl.addHoverText('Sonya Trinkl');
 
    wall1hotspot5trinkl.addEventListener('click', function () {
-      document.getElementById('wall-1-hotspot-5-trinkl').style.opacity = '1'
-      document.getElementById('wall-1-hotspot-5-trinkl').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-1-hotspot-5-trinkl').style.opacity = '1'
+         document.getElementById('wall-1-hotspot-5-trinkl').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-1-hotspot-5-trinkl').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -212,9 +242,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall2hotspot1konzertinfo.addHoverText('Konzertinfo');
 
    wall2hotspot1konzertinfo.addEventListener('click', function () {
-      document.getElementById('wall-2-hotspot-1-konzertinfo').style.opacity = '1'
-      document.getElementById('wall-2-hotspot-1-konzertinfo').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-2-hotspot-1-konzertinfo').style.opacity = '1'
+         document.getElementById('wall-2-hotspot-1-konzertinfo').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-2-hotspot-1-konzertinfo').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -225,9 +261,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall2hotspot2programm.addHoverText('Programm');
 
    wall2hotspot2programm.addEventListener('click', function () {
-      document.getElementById('wall-2-hotspot-2-programm').style.opacity = '1'
-      document.getElementById('wall-2-hotspot-2-programm').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-2-hotspot-2-programm').style.opacity = '1'
+         document.getElementById('wall-2-hotspot-2-programm').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-2-hotspot-2-programm').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -238,9 +280,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall2hotspot3gabanyi.addHoverText('Stefan Gabányi');
 
    wall2hotspot3gabanyi.addEventListener('click', function () {
-      document.getElementById('wall-2-hotspot-3-gabanyi').style.opacity = '1'
-      document.getElementById('wall-2-hotspot-3-gabanyi').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-2-hotspot-3-gabanyi').style.opacity = '1'
+         document.getElementById('wall-2-hotspot-3-gabanyi').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-2-hotspot-3-gabanyi').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -253,9 +301,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall3hotspot1konzertinfo.addHoverText('Konzertinfo');
 
    wall3hotspot1konzertinfo.addEventListener('click', function () {
-      document.getElementById('wall-3-hotspot-1-konzertinfo').style.opacity = '1'
-      document.getElementById('wall-3-hotspot-1-konzertinfo').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-3-hotspot-1-konzertinfo').style.opacity = '1'
+         document.getElementById('wall-3-hotspot-1-konzertinfo').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-3-hotspot-1-konzertinfo').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -266,9 +320,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall3hotspot2programm.addHoverText('Programm');
 
    wall3hotspot2programm.addEventListener('click', function () {
-      document.getElementById('wall-3-hotspot-2-programm').style.opacity = '1'
-      document.getElementById('wall-3-hotspot-2-programm').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-3-hotspot-2-programm').style.opacity = '1'
+         document.getElementById('wall-3-hotspot-2-programm').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-3-hotspot-2-programm').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -279,9 +339,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall3hotspot3taran.addHoverText('Eugene Taran');
 
    wall3hotspot3taran.addEventListener('click', function () {
-      document.getElementById('wall-3-hotspot-3-taran').style.opacity = '1'
-      document.getElementById('wall-3-hotspot-3-taran').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-3-hotspot-3-taran').style.opacity = '1'
+         document.getElementById('wall-3-hotspot-3-taran').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-3-hotspot-3-taran').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -293,9 +359,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall4hotspot1konzertinfo.addHoverText('Konzertinfo');
 
    wall4hotspot1konzertinfo.addEventListener('click', function () {
-      document.getElementById('wall-4-hotspot-1-konzertinfo').style.opacity = '1'
-      document.getElementById('wall-4-hotspot-1-konzertinfo').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-4-hotspot-1-konzertinfo').style.opacity = '1'
+         document.getElementById('wall-4-hotspot-1-konzertinfo').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-4-hotspot-1-konzertinfo').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -306,9 +378,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall4hotspot2programm.addHoverText('Programm');
 
    wall4hotspot2programm.addEventListener('click', function () {
-      document.getElementById('wall-4-hotspot-2-programm').style.opacity = '1'
-      document.getElementById('wall-4-hotspot-2-programm').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-4-hotspot-2-programm').style.opacity = '1'
+         document.getElementById('wall-4-hotspot-2-programm').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-4-hotspot-2-programm').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -319,9 +397,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall4hotspot3schilde.addHoverText('Gertrud Schilde');
 
    wall4hotspot3schilde.addEventListener('click', function () {
-      document.getElementById('wall-4-hotspot-3-schilde').style.opacity = '1'
-      document.getElementById('wall-4-hotspot-3-schilde').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-4-hotspot-3-schilde').style.opacity = '1'
+         document.getElementById('wall-4-hotspot-3-schilde').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-4-hotspot-3-schilde').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -332,9 +416,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall4hotspot4oesterhelt.addHoverText('Carl Oesterhelt');
 
    wall4hotspot4oesterhelt.addEventListener('click', function () {
-      document.getElementById('wall-4-hotspot-4-oesterhelt').style.opacity = '1'
-      document.getElementById('wall-4-hotspot-4-oesterhelt').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-4-hotspot-4-oesterhelt').style.opacity = '1'
+         document.getElementById('wall-4-hotspot-4-oesterhelt').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-4-hotspot-4-oesterhelt').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -345,9 +435,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall4hotspot5quellennachweise.addHoverText('Quellennachweise');
 
    wall4hotspot5quellennachweise.addEventListener('click', function () {
-      document.getElementById('wall-4-hotspot-5-quellennachweise').style.opacity = '1'
-      document.getElementById('wall-4-hotspot-5-quellennachweise').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-4-hotspot-5-quellennachweise').style.opacity = '1'
+         document.getElementById('wall-4-hotspot-5-quellennachweise').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-4-hotspot-5-quellennachweise').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -358,9 +454,15 @@ document.addEventListener('DOMContentLoaded', function () {
    wall4hotspot6ensemble.addHoverText('Ensemble');
 
    wall4hotspot6ensemble.addEventListener('click', function () {
-      document.getElementById('wall-4-hotspot-6-ensemble').style.opacity = '1'
-      document.getElementById('wall-4-hotspot-6-ensemble').style.pointerEvents = 'visible'
-      if ($(window).width() <= 992) {
+      if ($(window).width() >= 992) {
+
+         document.getElementById('wall-4-hotspot-6-ensemble').style.opacity = '1'
+         document.getElementById('wall-4-hotspot-6-ensemble').style.pointerEvents = 'visible'
+      } else {
+         document.getElementById('wall-4-hotspot-6-ensemble').style.display = 'block'
+
+      }
+      if ($(window).width() < 992) {
          $('.la-boheme__bottom').css('display', 'none')
       }
    });
@@ -371,8 +473,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
    $('.infospot__close').on('click', function () {
-      $(this).closest('.infospot').css('opacity', '0')
-      $(this).closest('.infospot').css('pointer-events', 'none')
+      if ($(window).width() >= 992) {
+
+         $(this).closest('.infospot').css('opacity', '0')
+         $(this).closest('.infospot').css('pointer-events', 'none')
+      } else {
+         $(this).closest('.infospot').css('display', 'none')
+      }
+
 
       wall1hotspot1konzertinfo.unlockHoverElement()
       wall1hotspot2programm.unlockHoverElement()
@@ -412,24 +520,23 @@ document.addEventListener('DOMContentLoaded', function () {
    panorama = new PANOLENS.ImagePanorama('img/panorama_final.jpg');
 
    // menu
-   if (window.innerWidth <= 992) {
-      // panorama.addEventListener('ready', function () {
-      //    console.log('ready');
 
-      //    infospot.lockHoverElement()
-      //    infospot2.lockHoverElement()
-      // })
+   $(window).on('resize', function () {
+      if (window.innerWidth <= 992) {
 
-
-      $('.menu__btn').on('click', function () {
+         $('.menu__btn').on('click', function () {
+            $('.menu__list').show()
+         })
+         $(document).on('click', function (e) {
+            if (!e.target.closest('.menu')) {
+               $('.menu__list').hide()
+            }
+         })
+      } else {
          $('.menu__list').show()
-      })
-      $(document).on('click', function (e) {
-         if (!e.target.closest('.menu')) {
-            $('.menu__list').hide()
-         }
-      })
-   }
+
+      }
+   })
    // menu
 
    panorama.add(
@@ -473,7 +580,7 @@ document.addEventListener('DOMContentLoaded', function () {
       rotateSpeed: -0.2,
       controlBar: false,
       autoRotate: true,
-      autoRotateSpeed: 0.7,
+      autoRotateSpeed: 0.55,
       autoRotateActivationDuration: 500,
       cameraFov: 70,
    });
