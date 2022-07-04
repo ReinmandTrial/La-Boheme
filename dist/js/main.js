@@ -580,7 +580,7 @@ document.addEventListener('DOMContentLoaded', function () {
       rotateSpeed: -0.2,
       controlBar: false,
       autoRotate: true,
-      autoRotateSpeed: 0.55,
+      autoRotateSpeed: 0.49,
       autoRotateActivationDuration: 500,
       cameraFov: 70,
    });
@@ -592,7 +592,9 @@ document.addEventListener('DOMContentLoaded', function () {
    // viewer.OrbitControls.addEventListener('change', function () {
    //    // console.log('change');
    //    console.log(panorama.getZoomLevel());
-
+   panorama.addEventListener('enter-fade-start', function () {
+      viewer.tweenControlCenter(new THREE.Vector3(2100, 0, 0), 0);
+   });
 
    // })
    // panorama
