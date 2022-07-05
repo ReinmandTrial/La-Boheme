@@ -2755,6 +2755,18 @@ body.plug-post-page:not(.page-plug) {
          margin-top: 10px;
       }
    }
+   &__social-links-mobile {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      margin-bottom: -40px;
+      padding-right: 250px;
+      margin-top: 17px;
+      @media (max-width: 359.98px) {
+         padding-right: 230px;
+      }
+   }
 
    &__social-link {
       &:not(:last-child) {

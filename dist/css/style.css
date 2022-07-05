@@ -7202,6 +7202,25 @@ body {
     margin-top: 10px;
   }
 }
+.post__social-links-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: -40px;
+  padding-right: 250px;
+  margin-top: 17px;
+}
+@media (max-width: 359.98px) {
+  .post__social-links-mobile {
+    padding-right: 230px;
+  }
+}
 .post__social-link:not(:last-child) {
   margin-right: 20px;
 }
