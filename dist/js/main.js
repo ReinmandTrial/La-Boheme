@@ -587,14 +587,19 @@ document.addEventListener('DOMContentLoaded', function () {
    viewer.OrbitControls.maxFov = 70;
    viewer.add(panorama);
 
-   viewer.OrbitControls.minPolarAngle = Math.PI / 2.2;
-   viewer.OrbitControls.maxPolarAngle = Math.PI * 2 / 3.7;
+   // viewer.OrbitControls.minPolarAngle = Math.PI / 2.2;
+   // viewer.OrbitControls.maxPolarAngle = Math.PI * 2 / 3.7;
    // viewer.OrbitControls.addEventListener('change', function () {
    //    // console.log('change');
    //    console.log(panorama.getZoomLevel());
    panorama.addEventListener('enter-fade-start', function () {
-      viewer.tweenControlCenter(new THREE.Vector3(2100, 0, 0), 0);
+      viewer.tweenControlCenter(new THREE.Vector3(2100, 0, -500), 0);
    });
+   $('.pt-trigger').on('click', function () {
+      viewer.tweenControlCenter(new THREE.Vector3(2100, 0, -500), 0);
+
+
+   })
 
    // })
    // panorama

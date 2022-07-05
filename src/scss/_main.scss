@@ -2744,3 +2744,28 @@ body.plug-post-page:not(.page-plug) {
       overflow: auto;
    }
 }
+.post {
+   &__social-links {
+      display: flex;
+
+      align-items: center;
+      padding-left: 22px;
+      margin-top: 40px;
+      @media (max-height: 700px) {
+         margin-top: 10px;
+      }
+   }
+
+   &__social-link {
+      &:not(:last-child) {
+         margin-right: 20px;
+      }
+   }
+}
+.page-plug {
+   .post__info {
+      @media (max-height: 700px) {
+         padding-top: 50px;
+      }
+   }
+}

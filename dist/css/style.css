@@ -7187,6 +7187,31 @@ body {
   }
 }
 
+.post__social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 22px;
+  margin-top: 40px;
+}
+@media (max-height: 700px) {
+  .post__social-links {
+    margin-top: 10px;
+  }
+}
+.post__social-link:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media (max-height: 700px) {
+  .page-plug .post__info {
+    padding-top: 50px;
+  }
+}
+
 .webp .home__main-image-wrap { background: url(../img/image.webp) left center/100% auto repeat-y; }
 
 .webp .no-webp .home__main-image-wrap { background: url(../img/image.webp) left center/100% auto repeat-y !important; }
