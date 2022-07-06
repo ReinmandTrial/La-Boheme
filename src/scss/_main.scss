@@ -2253,8 +2253,11 @@ body {
    }
    html,
    body {
-      height: 100vh;
-      overflow: hidden;
+      // overflow: hidden;
+   }
+   .plug-html {
+      height: 100%;
+      // overflow-y: auto;
    }
 }
 .la-boheme {
@@ -2741,7 +2744,7 @@ body {
 }
 body.plug-post-page:not(.page-plug) {
    @media (max-width: 991.98px) {
-      overflow: auto;
+      // overflow: auto;
    }
 }
 .post {
@@ -2775,6 +2778,9 @@ body.plug-post-page:not(.page-plug) {
    }
 }
 .page-plug {
+   @media (max-width: 991.98px) {
+      // height: 100vh;
+   }
    .post__info {
       @media (max-height: 700px) {
          padding-top: 50px;

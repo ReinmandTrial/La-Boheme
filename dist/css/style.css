@@ -6587,10 +6587,8 @@ body {
 }
 
 @media (max-width: 991.98px) {
-  html,
-body {
-    height: 100vh;
-    overflow: hidden;
+  .plug-html {
+    height: 100%;
   }
 }
 @media (max-width: 991.98px) {
@@ -7179,12 +7177,6 @@ body {
 
 .panolens-container {
   display: none;
-}
-
-@media (max-width: 991.98px) {
-  body.plug-post-page:not(.page-plug) {
-    overflow: auto;
-  }
 }
 
 .post__social-links {
