@@ -503,6 +503,44 @@ document.addEventListener('DOMContentLoaded', function () {
          $('.la-boheme__bottom').css('display', 'flex')
       }
    })
+   $(document).on('click', function (e) {
+      console.log('click');
+
+      if (!e.target.closest('.infospot') && !e.target.closest('.la-boheme-panorama')) {
+         console.log('outside');
+
+
+         if ($(window).width() >= 992) {
+
+            $('.infospot').css('opacity', '0')
+            $('.infospot').css('pointer-events', 'none')
+         } else {
+            $('.infospot').css('display', 'none')
+         }
+
+
+         wall1hotspot1konzertinfo.unlockHoverElement()
+         wall1hotspot2programm.unlockHoverElement()
+         wall1hotspot3kuebar.unlockHoverElement()
+         wall1hotspot4guenter.unlockHoverElement()
+         wall1hotspot5trinkl.unlockHoverElement()
+         wall2hotspot1konzertinfo.unlockHoverElement()
+         wall2hotspot2programm.unlockHoverElement()
+         wall2hotspot3gabanyi.unlockHoverElement()
+         wall3hotspot1konzertinfo.unlockHoverElement()
+         wall3hotspot2programm.unlockHoverElement()
+         wall3hotspot3taran.unlockHoverElement()
+         wall4hotspot1konzertinfo.unlockHoverElement()
+         wall4hotspot2programm.unlockHoverElement()
+         wall4hotspot3schilde.unlockHoverElement()
+         wall4hotspot4oesterhelt.unlockHoverElement()
+         wall4hotspot5quellennachweise.unlockHoverElement()
+         wall4hotspot6ensemble.unlockHoverElement()
+         if ($(window).width() <= 992) {
+            $('.la-boheme__bottom').css('display', 'flex')
+         }
+      }
+   })
    if ($(window).width() <= 992) {
       $(document).on('click', function (e) {
          if (!e.target.closest('.infospot')) {

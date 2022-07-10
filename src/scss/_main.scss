@@ -2036,7 +2036,7 @@ body {
    }
    &__sponsor-mobile {
       display: block;
-      position: absolute;
+      // position: absolute;
       right: 2px;
       bottom: 5px;
       @media (max-width: 991.98px) {
@@ -2227,7 +2227,7 @@ body {
          padding-bottom: unset;
       }
       .post__buttons {
-         padding: 119px 20px 40px 64px;
+         padding: 70px 20px 40px 64px;
       }
    }
    @media (max-width: 400px) {
