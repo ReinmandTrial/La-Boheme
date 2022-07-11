@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-1-hotspot-1-konzertinfo').style.opacity = '1'
          document.getElementById('wall-1-hotspot-1-konzertinfo').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-1-hotspot-1-konzertinfo').style.display = 'block'
+         document.getElementById('wall-1-hotspot-1-konzertinfo').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-1-hotspot-2-programm').style.opacity = '1'
          document.getElementById('wall-1-hotspot-2-programm').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-1-hotspot-2-programm').style.display = 'block'
+         document.getElementById('wall-1-hotspot-2-programm').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-1-hotspot-3-kuebar').style.opacity = '1'
          document.getElementById('wall-1-hotspot-3-kuebar').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-1-hotspot-3-kuebar').style.display = 'block'
+         document.getElementById('wall-1-hotspot-3-kuebar').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-1-hotspot-4-guenter').style.opacity = '1'
          document.getElementById('wall-1-hotspot-4-guenter').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-1-hotspot-4-guenter').style.display = 'block'
+         document.getElementById('wall-1-hotspot-4-guenter').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-1-hotspot-5-trinkl').style.opacity = '1'
          document.getElementById('wall-1-hotspot-5-trinkl').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-1-hotspot-5-trinkl').style.display = 'block'
+         document.getElementById('wall-1-hotspot-5-trinkl').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-2-hotspot-1-konzertinfo').style.opacity = '1'
          document.getElementById('wall-2-hotspot-1-konzertinfo').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-2-hotspot-1-konzertinfo').style.display = 'block'
+         document.getElementById('wall-2-hotspot-1-konzertinfo').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-2-hotspot-2-programm').style.opacity = '1'
          document.getElementById('wall-2-hotspot-2-programm').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-2-hotspot-2-programm').style.display = 'block'
+         document.getElementById('wall-2-hotspot-2-programm').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-2-hotspot-3-gabanyi').style.opacity = '1'
          document.getElementById('wall-2-hotspot-3-gabanyi').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-2-hotspot-3-gabanyi').style.display = 'block'
+         document.getElementById('wall-2-hotspot-3-gabanyi').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -306,7 +306,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-3-hotspot-1-konzertinfo').style.opacity = '1'
          document.getElementById('wall-3-hotspot-1-konzertinfo').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-3-hotspot-1-konzertinfo').style.display = 'block'
+         document.getElementById('wall-3-hotspot-1-konzertinfo').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-3-hotspot-2-programm').style.opacity = '1'
          document.getElementById('wall-3-hotspot-2-programm').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-3-hotspot-2-programm').style.display = 'block'
+         document.getElementById('wall-3-hotspot-2-programm').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -344,7 +344,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-3-hotspot-3-taran').style.opacity = '1'
          document.getElementById('wall-3-hotspot-3-taran').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-3-hotspot-3-taran').style.display = 'block'
+         document.getElementById('wall-3-hotspot-3-taran').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -364,7 +364,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-4-hotspot-1-konzertinfo').style.opacity = '1'
          document.getElementById('wall-4-hotspot-1-konzertinfo').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-4-hotspot-1-konzertinfo').style.display = 'block'
+         document.getElementById('wall-4-hotspot-1-konzertinfo').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -383,7 +383,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-4-hotspot-2-programm').style.opacity = '1'
          document.getElementById('wall-4-hotspot-2-programm').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-4-hotspot-2-programm').style.display = 'block'
+         document.getElementById('wall-4-hotspot-2-programm').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -402,7 +402,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-4-hotspot-3-schilde').style.opacity = '1'
          document.getElementById('wall-4-hotspot-3-schilde').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-4-hotspot-3-schilde').style.display = 'block'
+         document.getElementById('wall-4-hotspot-3-schilde').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -421,7 +421,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-4-hotspot-4-oesterhelt').style.opacity = '1'
          document.getElementById('wall-4-hotspot-4-oesterhelt').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-4-hotspot-4-oesterhelt').style.display = 'block'
+         document.getElementById('wall-4-hotspot-4-oesterhelt').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -440,7 +440,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-4-hotspot-5-quellennachweise').style.opacity = '1'
          document.getElementById('wall-4-hotspot-5-quellennachweise').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-4-hotspot-5-quellennachweise').style.display = 'block'
+         document.getElementById('wall-4-hotspot-5-quellennachweise').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
@@ -459,7 +459,7 @@ document.addEventListener('DOMContentLoaded', function () {
          document.getElementById('wall-4-hotspot-6-ensemble').style.opacity = '1'
          document.getElementById('wall-4-hotspot-6-ensemble').style.pointerEvents = 'visible'
       } else {
-         document.getElementById('wall-4-hotspot-6-ensemble').style.display = 'block'
+         document.getElementById('wall-4-hotspot-6-ensemble').style.display = 'flex'
 
       }
       if ($(window).width() < 992) {
