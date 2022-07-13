@@ -2367,6 +2367,7 @@ body {
       display: flex;
       padding-left: 3px;
       align-items: center;
+      width: 100%;
       @media (min-width: 992px) {
          display: none;
       }
@@ -2385,6 +2386,7 @@ body {
       max-width: 121px;
       width: 100%;
       margin-right: 10px;
+      // margin-left: auto;
       img {
          width: 100%;
       }
@@ -2582,32 +2584,32 @@ body {
       .infospot__image {
          @media (max-width: 991.98px) {
             // margin-top: 20px;
-            margin-left: -33px;
-            margin-right: -15px;
-            width: stretch;
-            padding-bottom: calc(100% + 48px);
+            // margin-left: -33px;
+            // margin-right: -15px;
+            // width: stretch;
+            // padding-bottom: calc(100% + 48px);
          }
       }
    }
    &--essemble {
       .infospot__leftside {
          padding-left: unset;
+         padding-right: unset;
       }
       .infospot__image {
          width: 540px;
          height: 100%;
-         // @media (max-width: 991.98px) {
-         //    // margin-top: 20px;
-         //    width: auto;
-         //    height: auto;
-         //    margin-right: 18px;
-         // }
          @media (max-width: 991.98px) {
-            // margin-top: 20px;
             margin-left: -33px;
             margin-right: -15px;
             width: stretch;
             padding-bottom: calc(100% + 48px);
+            //
+            position: static;
+            padding-bottom: unset;
+            img {
+               position: static;
+            }
          }
       }
    }
@@ -2619,7 +2621,7 @@ body {
          padding-left: unset;
          padding-right: 18px;
          margin-right: unset;
-         padding-right: unset;
+         // padding-right: unset;
       }
    }
 
