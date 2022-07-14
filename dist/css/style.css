@@ -6451,6 +6451,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   margin-left: 75px;
+  background: #ef0a7c;
 }
 .plug-post-page .btn:hover {
   border-color: #000;
