@@ -6336,6 +6336,9 @@ body {
     min-width: 125px;
   }
 }
+.plug-card__btn:hover {
+  color: #000 !important;
+}
 .plug-card__btn span {
   -webkit-transition: 0.2s ease;
   -o-transition: 0.2s ease;
@@ -6343,9 +6346,6 @@ body {
 }
 .plug-card__btn:hover {
   border-color: #000;
-}
-.plug-card__btn:hover span {
-  opacity: 0;
 }
 .plug-card__sponsor-mobile {
   display: block;
