@@ -6523,7 +6523,6 @@ body {
   -webkit-transition: 0.2s ease;
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
-  color: #ef0a7c;
 }
 @media (max-height: 800px) {
   .plug-post-page .post {
