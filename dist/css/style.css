@@ -6330,6 +6330,8 @@ body {
   font-family: "Bellefair";
   font-size: 21px;
   letter-spacing: -0.03em;
+  position: relative;
+  overflow: hidden;
 }
 @media (max-width: 991.98px) {
   .plug-card__btn {
@@ -6346,6 +6348,36 @@ body {
 }
 .plug-card__btn:hover {
   border-color: #000;
+}
+.plug-card__btn span {
+  position: relative;
+  z-index: 3;
+}
+.plug-card__btn::after {
+  content: "";
+  background: #beac83;
+  position: absolute;
+  z-index: 2;
+  width: 200%;
+  height: 500%;
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0, 0);
+      -ms-transform: translate(-50%, -50%) scale(0, 0);
+          transform: translate(-50%, -50%) scale(0, 0);
+}
+.plug-card__btn:hover::after {
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: translate(-50%, -50%) scale(1, 1);
+      -ms-transform: translate(-50%, -50%) scale(1, 1);
+          transform: translate(-50%, -50%) scale(1, 1);
 }
 .plug-card__sponsor-mobile {
   display: block;
@@ -6452,6 +6484,38 @@ body {
   width: fit-content;
   margin-left: 75px;
   background: #ef0a7c;
+  position: relative;
+  overflow: hidden;
+}
+.plug-post-page .post__text-btn span {
+  position: relative;
+  z-index: 5;
+}
+.plug-post-page .post__text-btn::after {
+  content: "";
+  background: #beac83;
+  position: absolute;
+  z-index: 2;
+  width: 200%;
+  height: 500%;
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0, 0);
+      -ms-transform: translate(-50%, -50%) scale(0, 0);
+          transform: translate(-50%, -50%) scale(0, 0);
+}
+.plug-post-page .post__text-btn:hover::after {
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: translate(-50%, -50%) scale(1, 1);
+      -ms-transform: translate(-50%, -50%) scale(1, 1);
+          transform: translate(-50%, -50%) scale(1, 1);
 }
 .plug-post-page .btn:hover {
   border-color: #000;
@@ -6459,6 +6523,7 @@ body {
   -webkit-transition: 0.2s ease;
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
+  color: #ef0a7c;
 }
 @media (max-height: 800px) {
   .plug-post-page .post {
