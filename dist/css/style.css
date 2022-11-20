@@ -5462,15 +5462,15 @@ body {
 
 @-webkit-keyframes ticker {
   100% {
-    -webkit-transform: translateX(-910.547px);
-            transform: translateX(-910.547px);
+    -webkit-transform: translateX(-914.297px);
+            transform: translateX(-914.297px);
   }
 }
 
 @keyframes ticker {
   100% {
-    -webkit-transform: translateX(-910.547px);
-            transform: translateX(-910.547px);
+    -webkit-transform: translateX(-914.297px);
+            transform: translateX(-914.297px);
   }
 }
 .page-plug {
